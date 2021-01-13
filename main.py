@@ -58,10 +58,6 @@ async def shedule(msg : types.Message, state : FSMContext):
             
     await bot.send_message(msg.from_user.id, res)
     await state.finish()
-
-# @dp.message_handler()
-# async def echo_message(msg: types.Message):
-#     await bot.send_message(msg.from_user.id, msg.text)
     
 if __name__ == '__main__':
     LogManager.info("Success connected")
