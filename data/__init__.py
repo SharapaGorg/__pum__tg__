@@ -1,17 +1,20 @@
 from data.LogPython import LogManager
 import sys, os
 
-try:
-    import xlrd
-except ImportError as e:
-    LogManager.warning(e)
-    os.system("python deps.py")
-    sys.exit(0)
-    
 if sys.platform == "win32":
     connect_sign = "\\"
 else:
     connect_sign = "/"
+
+try:
+    import xlrd
+except:
+    if sys.platform == "win32":
+        os.system(f"python data{connect_sign}deps.py")
+    else:
+        os.system(f"python3 data{connect_sign}deps.py")
+        
+    sys.exit(0)
         
 identities, folder = dict(), f"data{connect_sign}assets"
         
@@ -41,8 +44,15 @@ days = ["Вторник", "Среда", "Четверг", "Пятница", "С�
 def select_id(id_ : str):
     
     shedule = list()
+    code = {"Воскресенье" : "Unknown Identity"} 
     
-    if id_ not in identities:
+    for elem in identities:
+        if id_ in elem:
+            id_ = elem
+            code["Воскресенье"] = "OK"
+            break
+    
+    if code["Воскресенье"] != "OK":
         return {"Воскресенье" : "Unknown Identity"} 
     else:
         FILE = f"data{connect_sign}assets{connect_sign}9.xlsx"

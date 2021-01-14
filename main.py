@@ -1,8 +1,6 @@
 import os, sys
 
-from aiogram.types import user
 from data import LogPython
-
 from data.config import settings
 from data.LogPython import LogManager
 from data.__init__ import select_id
@@ -14,11 +12,11 @@ try:
     from aiogram.dispatcher.filters.state import State, StatesGroup
     from aiogram.contrib.fsm_storage.memory import MemoryStorage
     from aiogram.utils import executor
-except ImportError as e:
+except:
     if sys.platform == "win32":
         os.system("python data\deps.py")        
     else:
-        os.system("python data/deps.py")
+        os.system("python3 data/deps.py")
         
     sys.exit(0)
 
