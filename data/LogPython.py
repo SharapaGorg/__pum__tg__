@@ -1,4 +1,3 @@
-import ctypes
 from ctypes import ArgumentError
 import enum
 
@@ -7,14 +6,17 @@ from re import RegexFlag
 import datetime
 import os
 import threading
+import sys
 
-# kernel32 = ctypes.windll.kernel32
-# kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+if sys.platform == "win32":
+    import ctypes
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
 
 FILE = open('LogPython_info.log', 'a')
 pid = str(os.getpid()).ljust(5)
 
-RESET_COLOR = '\033[0m'
+RESET_COLOR = '\033[0m' 
 
 DEBUG_COLOR = '\033[36m'
 INFO_COLOR = '\033[32m'
@@ -78,6 +80,8 @@ class LogManager:
                 print(*args, **kwargs, file=FILE)
             except:
                 print('!!! FAILED TO LOG DATA !!!', file=FILE)
+                
+            FILE.flush()
 
     @staticmethod
     def debug(*args, **kwargs):

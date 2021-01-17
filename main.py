@@ -47,10 +47,14 @@ async def shedule(msg : types.Message, state : FSMContext):
     res = str()
     
     for elem in _shedule_.keys():
+        count = 1
+        
         res += elem + ': \n'
 
         for i in _shedule_[elem]:
-            res += "- " + i + "\n"
+            res += "- " + str(count) + " : " + i + "\n" 
+            
+            count += 1
             
     LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name}")
             
