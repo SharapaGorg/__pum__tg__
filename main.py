@@ -1,9 +1,10 @@
 import os, sys
 
-from data import LogPython
+from aiogram.types import message
+
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_id, select_item
+from data.__init__ import select_id, select_item, item_list
 
 try:
     from aiogram import Bot, types
@@ -44,13 +45,23 @@ async def proccess_shedule_command(msg : types.Message):
     
 @dp.message_handler(commands = ['find_victim'])
 async def proccess_find_victim_command(msg : types.Message):
-    await bot.send_message(msg.chat.id, "Напишите запрос в формате урок-урок_по_счёту-день_недели")
+    await bot.send_message(msg.chat.id, "Напишите запрос в формате урок урок_по_счёту день_недели\nНапример:\nинфорМАтика 1 чеТвеРГ\nоКНо 2 втОрник")
     await FindingLessonDataInput.r.set()
+    
+@dp.message_handler(commands = ['item_list'])
+async def items_list(msg : types.Message):
+    data = item_list()
+    res = str() 
+    
+    for elem in data:
+        res += ("-" + elem.lower() + "\n")
+        
+    await bot.send_message(msg.from_user.id, res)
 
 @dp.message_handler(state = FindingLessonDataInput.r)
 async def find_victim(msg : types.Message, state : FSMContext):
     r = msg.text
-    data = r.split("-")
+    data = r.split()
     try:
         handled = select_item(item = data[0], index = int(data[1]), day = data[2])
         
@@ -63,7 +74,7 @@ async def find_victim(msg : types.Message, state : FSMContext):
     
         await bot.send_message(msg.from_user.id, res)
     except:
-        await bot.send_message(msg.from_user.id, "Not_Found_Acceptable_Identity")
+        await bot.send_message(msg.from_user.id, "Вероятнее всего, таких людей нет)")
         
     await state.finish()
 
@@ -71,7 +82,7 @@ async def find_victim(msg : types.Message, state : FSMContext):
 async def shedule(msg : types.Message, state : FSMContext):
     r = msg.text
     try:
-        _shedule_ = select_id(r)
+        _shedule_ = select_id(r, debug = 0, custom_id = False)
         
         res = str()
         

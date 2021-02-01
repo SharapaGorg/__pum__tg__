@@ -55,7 +55,7 @@ def select_id(id_ : str, **kwargs):
     if kwargs['custom_id']:
         handled_list = kwargs['custom_id']
     else:
-        handle_list = identities
+        handled_list = identities
     
     for elem in handled_list:
         try:
@@ -136,8 +136,23 @@ def select_item(**item_info):
                         if item.upper() == item_info['item'].upper() and item_kit.index(item) + 1 == item_info['index'] and get_key(day, item_kit).upper() == item_info['day'].upper():
                             for key in member.keys():
                                 res.add(key)
-
+    
         if len(res) != 0:
             return res
         else:
             raise Exception("NotFoundImportantInfo")
+
+def item_list():
+    res = set()
+    
+    with open(f"data{connect_sign}latest_shedule.json", "r", encoding = "utf-8") as handled:
+        data = json.loads(handled.readline())
+        res = set()
+        
+        for member in data:
+            for day in member.values():
+                for item_kit in day.values():
+                    for item in item_kit:  
+                        res.add(item.upper())
+                        
+    return res
