@@ -3,7 +3,7 @@ import os, sys
 from data import LogPython
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_id
+from data.__init__ import select_id, select_item
 
 try:
     from aiogram import Bot, types
@@ -23,7 +23,10 @@ except:
 bot = Bot(token = settings['TOKEN'])
 dp = Dispatcher(bot, storage=MemoryStorage())
 
-class DataInput(StatesGroup):
+class SheduleDataInput(StatesGroup):
+    r = State()
+    
+class FindingLessonDataInput(StatesGroup):
     r = State()
 
 @dp.message_handler(commands = ['start'])
@@ -37,28 +40,57 @@ async def process_help_command(message: types.Message):
 @dp.message_handler(commands = ['shedule'])
 async def proccess_shedule_command(msg : types.Message):
     await bot.send_message(msg.chat.id,'Напишите, кто Вы, в формате Фамилия Имя Отчество')
-    await DataInput.r.set()
+    await SheduleDataInput.r.set()
+    
+@dp.message_handler(commands = ['find_victim'])
+async def proccess_find_victim_command(msg : types.Message):
+    await bot.send_message(msg.chat.id, "Напишите запрос в формате урок-урок_по_счёту-день_недели")
+    await FindingLessonDataInput.r.set()
 
-@dp.message_handler(state = DataInput.r)
+@dp.message_handler(state = FindingLessonDataInput.r)
+async def find_victim(msg : types.Message, state : FSMContext):
+    r = msg.text
+    data = r.split("-")
+    try:
+        handled = select_item(item = data[0], index = int(data[1]), day = data[2])
+        
+        res = str()
+        
+        for student in handled:
+            res += ("- " + student + " \n")
+            
+        LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
+    
+        await bot.send_message(msg.from_user.id, res)
+    except:
+        await bot.send_message(msg.from_user.id, "Not_Found_Acceptable_Identity")
+        
+    await state.finish()
+
+@dp.message_handler(state = SheduleDataInput.r)
 async def shedule(msg : types.Message, state : FSMContext):
     r = msg.text
-    _shedule_ = select_id(r)
-    
-    res = str()
-    
-    for elem in _shedule_.keys():
-        count = 1
+    try:
+        _shedule_ = select_id(r)
         
-        res += elem + ': \n'
+        res = str()
+        
+        for elem in _shedule_.keys():
+            count = 1
+            
+            res += elem + ': \n'
 
-        for i in _shedule_[elem]:
-            res += "- " + str(count) + " : " + i + "\n" 
-            
-            count += 1
-            
-    LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name}")
-            
-    await bot.send_message(msg.from_user.id, res)
+            for i in _shedule_[elem]:
+                res += "- " + str(count) + " : " + i + "\n" 
+                
+                count += 1
+                
+        LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
+                
+        await bot.send_message(msg.from_user.id, res)
+    except: 
+        await bot.send_message(msg.from_user.id, "Unknown Identity. Try again (bye)")
+        
     await state.finish()
     
 if __name__ == '__main__':

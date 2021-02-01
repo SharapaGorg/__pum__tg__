@@ -1,11 +1,10 @@
-# from data.LogPython import LogManager
 import sys, os
 
 if sys.platform == "win32":
     connect_sign = "\\"
 else:
     connect_sign = "/"
-
+    
 try:
     import xlrd
 except:
@@ -15,49 +14,65 @@ except:
         os.system(f"python3 data{connect_sign}deps.py")
         
     sys.exit(0)
-        
-identities, folder = dict(), f"data\\assets"
-        
-""" Creating a list of Identities """ 
-for grid in os.listdir(folder):
 
-    FILE = folder + connect_sign + grid
+try:
+    from data.LogPython import LogManager
+            
+    identities, folder = dict(), f"data{connect_sign}assets"
+            
+    """ Creating a list of Identities """ 
 
-    data = xlrd.open_workbook(FILE)
+    for grid in os.listdir(folder):
 
-    for i in range(1, len(data.sheet_names())):
-        sh1, count = data.sheet_by_index(i), 0
-        
-        temp_index = 6
-        
-        if i == 0:
-            temp_index = 7
-        
-        for l in range(sh1.nrows):
-            temp_ = sh1.row_values(l)[temp_index]
+        FILE = folder + connect_sign + grid
 
-            if temp_ != '':
-                identities[temp_] = i
-   
+        data = xlrd.open_workbook(FILE)
+
+        for i in range(0, len(data.sheet_names())):
+            sh1, count = data.sheet_by_index(i), 0
+            
+            temp_index = 6
+            
+            if i == 0:
+                temp_index = 7
+            
+            for l in range(sh1.nrows):
+                temp_ = sh1.row_values(l)[temp_index]
+
+                if temp_ != '':
+                    identities[temp_] = i
+except:
+    from LogPython import LogManager
+    LogManager.warning("You shouldn`t run imported util")
+      
 days = ["Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
                 
-def select_id(id_ : str):
+def select_id(id_ : str, **kwargs):
     
-    shedule = list()
+    shedule, handled_list = list(), list()
     code = {"Воскресенье" : "Unknown Identity"} 
     
-    for elem in identities:
-        if id_ in elem:
-            id_ = elem
-            code["Воскресенье"] = "OK"
-            break
+    if kwargs['custom_id']:
+        handled_list = kwargs['custom_id']
+    else:
+        handle_list = identities
+    
+    for elem in handled_list:
+        try:
+            if id_ in elem:
+                id_ = elem
+                code["Воскресенье"] = "OK"
+                break
+        except: pass
     
     if code["Воскресенье"] != "OK":
-        return {"Воскресенье" : "Unknown Identity"} 
+        raise Exception("UnknownIdentity")
     else:
         FILE = f"data{connect_sign}assets{connect_sign}9.xlsx"
+        if kwargs['debug'] : 
+            FILE = f"assets{connect_sign}9.xlsx"
         
-        data, index_ = xlrd.open_workbook(FILE), identities[id_]
+        data, index_ = xlrd.open_workbook(FILE), handled_list[id_]
         
         sh1, checker = data.sheet_by_index(index_), 0
     
@@ -73,7 +88,7 @@ def select_id(id_ : str):
                 checker += 1
             
         return handle_shedule(shedule)
-   
+    
 def handle_shedule(shedule_ : list):
     ishedule = dict()
     count = 0 
@@ -101,3 +116,28 @@ def handle_shedule(shedule_ : list):
                 ishedule[day][ishedule[day].index(lesson)] = "Окно"
 
     return ishedule
+
+import json
+
+def get_key(d, value):
+    for k, v in d.items():
+        if v == value:
+            return k
+
+def select_item(**item_info):
+    with open(f"data{connect_sign}latest_shedule.json", "r", encoding = "utf-8") as handled:
+        data = json.loads(handled.readline())
+        res = set()
+        
+        for member in data:
+            for day in member.values():
+                for item_kit in day.values():
+                    for item in item_kit:
+                        if item.upper() == item_info['item'].upper() and item_kit.index(item) + 1 == item_info['index'] and get_key(day, item_kit).upper() == item_info['day'].upper():
+                            for key in member.keys():
+                                res.add(key)
+
+        if len(res) != 0:
+            return res
+        else:
+            raise Exception("NotFoundImportantInfo")
