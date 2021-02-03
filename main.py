@@ -4,7 +4,8 @@ from aiogram.types import message
 
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_id, select_item, item_list
+from data.__init__ import select_item, item_list
+from data.test import select_id
 
 try:
     from aiogram import Bot, types
@@ -82,19 +83,16 @@ async def find_victim(msg : types.Message, state : FSMContext):
 async def shedule(msg : types.Message, state : FSMContext):
     r = msg.text
     try:
-        _shedule_ = select_id(r, debug = 0, custom_id = False)
-        
         res = str()
+        data = select_id(r)
         
-        for elem in _shedule_.keys():
-            count = 1
+        res += data.name + ":\n"
+        
+        for day in data.shedule:
+            res += "\n" + day.name + ":\n"
             
-            res += elem + ': \n'
-
-            for i in _shedule_[elem]:
-                res += "- " + str(count) + " : " + i + "\n" 
-                
-                count += 1
+            for elem in day.shedule:
+                res += '-' + elem.lower() + '\n'
                 
         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
                 
