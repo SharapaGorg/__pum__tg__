@@ -25,21 +25,18 @@ ERROR_COLOR = '\033[31m'
 
 LOCK = threading.Lock()
 
-
 class LEVEL(enum.IntEnum):
     DEBUG = 0
     INFO = 1
     WARNING = 2
     ERROR = 3
 
-
 __console_level__ = LEVEL.INFO
 __file_level__ = LEVEL.DEBUG
 
-
 class LogManager:
     @staticmethod
-    def prefix(level: str):
+    def prefix(level: str) -> str:
         level = level.ljust(7)
         return f"[{datetime.datetime.now().strftime('%m/%d/%Y %I:%M:%S %p')}] [{__name__} {pid}] [{level}]"
 
@@ -115,7 +112,7 @@ class LogManager:
         return ' ' + input(LogManager.prefix('OUTPUT')) + ' '
 
     @staticmethod
-    def get_logs(qantiny:int, *args):
+    def get_logs(qantiny:int, *args) -> list:
         
         _ = open("LogPython_info.log", "r").readlines()
         
@@ -143,5 +140,5 @@ class LogManager:
 
             self.completed = completed
 
-        def __str__(self):
+        def __str__(self) -> str:
             return str(self.completed[len(self.completed) - 1])
