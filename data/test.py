@@ -111,6 +111,8 @@ def select_id(name : str):
             if checker < 9 and day_counter != -1:
                 if lesson == '':
                     lesson = "окно"
+                elif 'зал' in str(cabinet):
+                    cabinet = 'зал'
                     
                 obj_lesson = Lesson(lesson, group, cabinet, teacher)
                 obj_days[day_counter].push_lesson(obj_lesson)   
@@ -143,3 +145,4 @@ def item_list() -> list:
     result = set(container)
             
     return result
+

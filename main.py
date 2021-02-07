@@ -83,8 +83,8 @@ async def proccess_find_victim_command(msg : types.Message):
 async def items_list(msg : types.Message):
     data = item_list()
     res = str() 
-    for elem in data:
-        res += ("-" + str(elem).lower() + lesson_spacer(str(elem)) * ' ' + elem.group + "\n")
+    for elem in data:   
+        res += ("-" + str(elem).lower() + "\n")
         
     await bot.send_message(msg.from_user.id, res)
 
@@ -118,12 +118,20 @@ async def shedule(msg : types.Message, state : FSMContext):
         res += data.name + ":\n"
         
         for day in data.shedule:
+
             res += "\n" + day.name + ":\n"
             
             for elem in day.shedule:
-                res += '- ' + str(elem)
-                res += ' ' * lesson_spacer(str(elem)) + elem.cab + '\n'
+                spacer = 0
+                if len(elem.cab) < 3:
+                    # temp_spacer : str = 6 * " "
+                    temp_cab = "000"
+                elif len(elem.cab) > 3:
+                    spacer = 4
+                else:
+                    temp_cab = ''
                 
+                res += temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
                 
         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
                 
