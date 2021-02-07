@@ -2,8 +2,7 @@ import os, sys
 
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_item
-from data.test import select_id, item_list
+from data.__init__ import select_item, select_id, item_list
 
 try:
     from aiogram import Bot, types
@@ -19,38 +18,6 @@ except:
         os.system("python3 data/deps.py")
         
     sys.exit(0)
-
-def lesson_spacer(lesson : str) -> int:
-    lesson = lesson.lower()
-    
-    if lesson == "информатика":
-        return 11
-    elif lesson == "обществознание":
-        return 4
-    elif lesson == "география":
-        return 18
-    elif lesson == "физика":
-        return 25
-    elif lesson == "мхк":
-        return 30
-    elif lesson == "английский":
-        return 15
-    elif lesson == "литература":
-        return 16
-    elif lesson == "геометрия":
-        return 17
-    elif lesson == "история":
-        return 22
-    elif lesson == "химия":
-        return 26
-    elif lesson == "алгебра":
-        return 23
-    elif lesson == "русский":
-        return 23
-    elif lesson == "биология":
-        return 20
-    else:
-        return 21
 
 bot = Bot(token = settings['TOKEN'])
 dp = Dispatcher(bot, storage=MemoryStorage())
@@ -122,14 +89,12 @@ async def shedule(msg : types.Message, state : FSMContext):
             res += "\n" + day.name + ":\n"
             
             for elem in day.shedule:
-                spacer = 0
+                spacer, temp_cab = 0, ''
+                
                 if len(elem.cab) < 3:
-                    # temp_spacer : str = 6 * " "
                     temp_cab = "000"
                 elif len(elem.cab) > 3:
                     spacer = 4
-                else:
-                    temp_cab = ''
                 
                 res += temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
                 
