@@ -52,6 +52,7 @@ class Lesson:
         try:
             return self.name[0].upper() + self.name[1:]
         except:
+            #stupid bug
             raise Exception("Psevdo window in shedule [-]")
                 
 members = list()
@@ -59,7 +60,6 @@ days = ["Понедельник", "Вторник", "Среда", "Четвер�
 
 for grid in os.listdir(folder):
 
-    print(grid)
     FILE = folder + connect_sign + grid
 
     data = xlrd.open_workbook(FILE)
@@ -67,21 +67,26 @@ for grid in os.listdir(folder):
     for i in range(0, len(data.sheet_names())):
         sh1, count = data.sheet_by_index(i), 0
         
-        if grid == '9.xlsx':
-            temp_index = 6
-        else:
-            temp_index = 7
+        temp_index = 6
         
-        if i == 0 and grid != '8.xlsx':
+        if grid == '8.xlsx':
+            temp_index = 7
+ 
+        if i == 0 and grid == '9.xlsx':
             temp_index = 7
         if i == 5 and grid == '8.xlsx':
             temp_index = 6
         
         for l in range(sh1.nrows):
-            temp_ = sh1.row_values(l)[temp_index]
+            try:
+                temp_ = sh1.row_values(l)[temp_index]
 
-            if len(str(temp_).split()) == 3:
-                members.append(Member(temp_, grid, i))
+                if len(str(temp_).split()) == 3:
+                    members.append(Member(temp_, grid, i))
+            except : pass
+            
+for elem in members:
+    print(elem.name, elem.year)
 
 def select_id(name : str):
     """
@@ -163,8 +168,6 @@ def item_list() -> list:
     result = set(container)
             
     return result
-
-
 
 import json
 
