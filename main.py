@@ -96,7 +96,10 @@ async def shedule(msg : types.Message, state : FSMContext):
                 elif len(elem.cab) > 3:
                     spacer = 4
                 
-                res += temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
+                try:
+                    res += temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
+                except:
+                    pass
                 
         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
                 
