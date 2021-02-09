@@ -76,6 +76,8 @@ for grid in os.listdir(folder):
             temp_index = 7
         if i == 5 and grid == '8.xlsx':
             temp_index = 6
+        if i == 9 or i == 11 and grid == '11.xlsx':
+            temp_index = 7
         
         for l in range(sh1.nrows):
             try:
@@ -84,9 +86,6 @@ for grid in os.listdir(folder):
                 if len(str(temp_).split()) == 3:
                     members.append(Member(temp_, grid, i))
             except : pass
-            
-for elem in members:
-    print(elem.name, elem.year)
 
 def select_id(name : str):
     """
