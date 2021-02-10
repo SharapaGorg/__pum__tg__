@@ -63,14 +63,14 @@ async def find_victim(msg : types.Message, state : FSMContext):
         handled = select_item(item = data[0], index = int(data[1]), day = data[2])
         
         res = str()
-        
+
         for student in handled:
             res += ("- " + student + " \n")
             
         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
     
         await bot.send_message(msg.from_user.id, res)
-    except:
+    except Exception as e:
         await bot.send_message(msg.from_user.id, "Вероятнее всего, таких людей нет)")
         
     await state.finish()

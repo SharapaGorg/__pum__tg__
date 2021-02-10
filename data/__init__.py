@@ -124,8 +124,7 @@ def select_id(name : str):
             if checker < 9 and day_counter != -1:
                 if lesson == '' and data.row_values(i)[0] != '' and data.row_values(i)[0] not in days:
                     lesson = "окно"
-                    
-                    print(temp_day)
+
                 elif 'зал' in str(cabinet):
                     cabinet = 'зал'
                     
@@ -136,9 +135,6 @@ def select_id(name : str):
                         obj_days[i].push_lesson(obj_lesson)
                   
                 checker += 1
-                
-    for elem in obj_days:
-        print(elem.shedule)
                 
     identity.push_shedule(obj_days)
     
@@ -176,7 +172,7 @@ def get_key(d, value):
             return k
 
 def select_item(**item_info):
-    with open(f"data{connect_sign}latest_shedule.json", "r", encoding = "utf-8") as handled:
+    with open(f"data{connect_sign}OK.json", "r", encoding = "utf-8") as handled:
         data = json.loads(handled.readline())
         res = set()
         
@@ -186,9 +182,17 @@ def select_item(**item_info):
                     for item in item_kit:
                         if item.upper() == item_info['item'].upper() and item_kit.index(item) + 1 == item_info['index'] and get_key(day, item_kit).upper() == item_info['day'].upper():
                             for key in member.keys():
-                                res.add(key)
+                                res.add(key.split()[0])
+                        else:
+                            for key in member.keys():
+                                print(key, item, item_kit.index(item) + 1, get_key(day, item_kit))
+                                break
     
         if len(res) != 0:
             return res
         else:
             raise Exception("NotFoundImportantInfo")
+        
+res = select_item(item = "химия", index = 1, day = 'понедельник')
+
+print(res)
