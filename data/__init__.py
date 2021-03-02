@@ -52,8 +52,7 @@ class Lesson:
         try:
             return self.name[0].upper() + self.name[1:]
         except:
-            #stupid bug
-            raise Exception("Psevdo window in shedule [-]")
+            raise Exception("-")
                 
 members = list()
 days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
