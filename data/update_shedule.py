@@ -11,10 +11,8 @@ else:
     folder = "data" + spliter + "assets" + spliter
 
 def is_indentity( name_object : str ) -> bool:
-    if name_object != '' and len(name_object.split()) == 3:
-        return True
+    return name_object != '' and len(name_object.split()) == 3
     
-    return False
 
 def filler( course : int, active : int, unusual_positions : dict, *pass_index):
     """
@@ -59,4 +57,4 @@ def filler( course : int, active : int, unusual_positions : dict, *pass_index):
                     
             except: pass
             
-filler(8, 7, {5 : 6} , 0)     
+filler(8, 7, {5 : 6} , 0) # fill 8s course
