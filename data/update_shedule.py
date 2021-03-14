@@ -1,6 +1,4 @@
 import sys
-# from data.utils import filler
-# from data.utils import return_static_shedule
 
 from utils import filler, return_static_shedule
 

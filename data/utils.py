@@ -135,75 +135,8 @@ def item_list() -> list:
     result = set(container)
             
     return result
-
-def return_static_shedule(container : list, folder_ : str) -> list:
-    """
-
-    :return:
-    
-    Object arch shedule ->
-    
-    [
-        Member ->
-                - Member.name
-                - Member.year
-                - Member.excel_index
-                - Member.shedule ->
-                    [
-                        Day  ->
-                                - Day.name
-                                - Day.shedule -> 
-                                    [
-                                        Lesson -> 
-                                                - Lesson.name
-                                                - Lesson.group
-                                                - Lesson.teacher
-                                                - Lesson.cabinet
-                                        ...
-                                    ]
-                        ...
-                    ]
-        ...
-    ]
-
-    """
-
-    DATA = list() # list type of : [Member.shedule = Day.shedule = [Lesson(...) * len(list)]]
-    
-    for student in container:
-        print(student.name)
         
-        student_shedule, temp_day,  access = list(), list(), False
-        
-        src_path = folder_ + student.year
-        SRC = xlrd.open_workbook(src_path)
-        
-        shedule_index = SRC.sheet_by_index(student.excel_index)
-        
-        for i in range(shedule_index.nrows):     
-            day = shedule_index.row_values(i)[0]
-            lesson = shedule_index.row_values(i)[1]
-            group = shedule_index.row_values(i)[2]
-            teacher = shedule_index.row_values(i)[3]
-            cabinet = shedule_index.row_values(i)[4]  
-            
-            if access:
-                temp_day.append(Lesson(lesson, group, cabinet, teacher))
-            
-            if day in days:
-                _day = Day(day)
-                _day.push_day_shedule(temp_day)
-                
-                student_shedule.append(_day)
-                
-                temp_day = list()                    
-                access = True
-                
-        DATA.append(student_shedule)
-        
-    return DATA
-        
-def telegram_shedule(object_shedule : list):
+def telegram_shedule(object_shedule : list) -> list:
     """
     
     :return:
@@ -238,6 +171,130 @@ def telegram_shedule(object_shedule : list):
     ]
     
     """
+    
+    string_shedule = list()
+    
+    for member in object_shedule:
+        member_shedule = list()
+        
+        for day in member.shedule:
+            member_shedule.append(day_shedule_part(day))
+            
+        string_shedule.append( { member.name : member_shedule } )
+        
+    return string_shedule
+    
+def day_shedule_part(day : Day) -> dict:
+    """
+    
+    Convert: 
+    
+    Day ->
+        Day.name
+        Day.shedule ->
+                        [
+                            Lesson ->
+                                    Lesson.name
+                                    Lesson.group
+                                    Lesson.teacher
+                                    Lesson.cabinet
+                            ...
+                        ]
+                        
+    To:
+    
+    {
+        Day.name : 
+                [
+                    Lesson.name,
+                    ...
+                ]
+    }
+    
+    """    
+    
+    _value = list()
+    
+    for lesson in day.shedule:
+        _value.append(lesson.name)
+        
+    return { day.name : _value }
+           
+def return_static_shedule(container : list, folder_ : str) -> list:
+    """
+
+    :return:
+    
+    Object arch shedule ->
+    
+    [
+        Member ->
+                - Member.name
+                - Member.year
+                - Member.excel_index
+                - Member.shedule ->
+                    [
+                        Day  ->
+                                - Day.name
+                                - Day.shedule -> 
+                                    [
+                                        Lesson -> 
+                                                - Lesson.name
+                                                - Lesson.group
+                                                - Lesson.teacher
+                                                - Lesson.cabinet
+                                        ...
+                                    ]
+                        ...
+                    ]
+        ...
+    ]
+
+    """
+
+    DATA = list() # list type of : [Member.shedule = Day.shedule = [Lesson(...) * len(list)]]
+    breaker = 0
+    
+    for student in container:
+        if breaker == 5:
+            break
+        
+        breaker += 1
+        print(student.name)
+        
+        student_shedule, temp_day,  access = list(), list(), False
+        
+        src_path = folder_ + student.year
+        SRC = xlrd.open_workbook(src_path)
+        
+        shedule_index = SRC.sheet_by_index(student.excel_index)
+        
+        for i in range(shedule_index.nrows):     
+            day = shedule_index.row_values(i)[0]
+            lesson = shedule_index.row_values(i)[1]
+            group = shedule_index.row_values(i)[2]
+            teacher = shedule_index.row_values(i)[3]
+            cabinet = shedule_index.row_values(i)[4]  
+            
+            if day in days:
+                _day = Day(day)
+                _day.push_day_shedule(temp_day)
+                
+                student_shedule.append(_day)
+                
+                temp_day = list()                    
+                access = True
+                
+            if access:
+                temp_day.append(Lesson(lesson, group, cabinet, teacher))
+                
+        student.push_shedule(student_shedule)
+        DATA.append(student)
+    
+    res = telegram_shedule(DATA)
+    print(res)
+    
+    return res
                 
 def write_list_to_json(data_list : list, filename : str):
     with open(filename, "w", encoding = "utf-8") as wrote:
