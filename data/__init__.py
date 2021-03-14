@@ -7,16 +7,16 @@ else: spliter = "/"
 
 if __name__ == "__main__":
     from utils import Day, Lesson
-    from utils import filler, get_key
+    from utils import filler
     folder = "assets" + spliter
 else:
     from data.utils import Day, Lesson
-    from data.utils import filler, get_key
+    from data.utils import filler
     folder = "data" + spliter + "assets" + spliter
    
-filler(folder, members, 8, 7, {5 : 6} , 0) # fill 8s course
-filler(folder, members, 9, 6, {0 : 7}, 24) # fill 9 course
-filler(folder, members, 10, 6, {}, 9) # fill 10 course
+filler(folder, members, 8, 7, {5 : 6} , 0)         # fill 8 course
+filler(folder, members, 9, 6, {0 : 7}, 24)         # fill 9 course
+filler(folder, members, 10, 6, {}, 9)              # fill 10 course
 filler(folder, members, 11, 6, {9 : 7, 11 : 7}, 0) # fill 11 course
             
 days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
@@ -73,51 +73,3 @@ def select_id(name : str):
     identity.push_shedule(obj_days)
     
     return identity
-
-def item_list() -> list:
-    container = list()
-    FILE = f"data{spliter}assets{spliter}9.xlsx"
-    _ = xlrd.open_workbook(FILE)
-    data = _.sheet_by_index(1)
-    names = list()
-    
-    for i in range(data.nrows):
-        lesson = data.row_values(i)[1]
-        group = data.row_values(i)[2]
-        teacher = data.row_values(i)[3]
-        cabinet = data.row_values(i)[4]    
-        
-        if lesson != "Предмет" and lesson != ' ':
-            __obj_lesson = Lesson(lesson, group, cabinet, teacher)
-            
-            if lesson not in names:
-                container.append(__obj_lesson)
-                names.append(lesson)
-            
-    result = set(container)
-            
-    return result
-
-import json
-
-def select_item(**item_info):
-    with open(f"data{spliter}OK.json", "r", encoding = "utf-8") as handled:
-        data = json.loads(handled.readline())
-        res = set()
-        
-        for member in data:
-            for day in member.values():
-                for item_kit in day.values():
-                    for item in item_kit:
-                        if item.upper() == item_info['item'].upper() and item_kit.index(item) + 1 == item_info['index'] and get_key(day, item_kit).upper() == item_info['day'].upper():
-                            for key in member.keys():
-                                res.add(key.split()[0])
-                        else:
-                            for key in member.keys():
-                                print(key, item, item_kit.index(item) + 1, get_key(day, item_kit))
-                                break
-    
-        if len(res) != 0:
-            return res
-        else:
-            raise Exception("NotFoundImportantInfo")

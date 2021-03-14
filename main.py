@@ -2,7 +2,7 @@ import os, sys
 
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_item, select_id, item_list
+from data.__init__ import select_id, item_list
 
 try:
     from aiogram import Bot, types
@@ -55,25 +55,25 @@ async def items_list(msg : types.Message):
         
     await bot.send_message(msg.from_user.id, res)
 
-@dp.message_handler(state = FindingLessonDataInput.r)
-async def find_victim(msg : types.Message, state : FSMContext):
-    r = msg.text
-    data = r.split()
-    try:
-        handled = select_item(item = data[0], index = int(data[1]), day = data[2])
+# @dp.message_handler(state = FindingLessonDataInput.r)
+# async def find_victim(msg : types.Message, state : FSMContext):
+#     r = msg.text
+#     data = r.split()
+#     try:
+#         handled = select_item(item = data[0], index = int(data[1]), day = data[2])
         
-        res = str()
+#         res = str()
 
-        for student in handled:
-            res += ("- " + student + " \n")
+#         for student in handled:
+#             res += ("- " + student + " \n")
             
-        LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
+#         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
     
-        await bot.send_message(msg.from_user.id, res)
-    except Exception as e:
-        await bot.send_message(msg.from_user.id, "Вероятнее всего, таких людей нет)")
+#         await bot.send_message(msg.from_user.id, res)
+#     except Exception as e:
+#         await bot.send_message(msg.from_user.id, "Вероятнее всего, таких людей нет)")
         
-    await state.finish()
+#     await state.finish()
 
 @dp.message_handler(state = SheduleDataInput.r)
 async def shedule(msg : types.Message, state : FSMContext):
