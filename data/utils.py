@@ -256,7 +256,9 @@ def return_static_shedule(container : list, folder_ : str) -> list:
     breaker = 0
     
     for student in container:
-        if breaker == 5:
+        _day = None
+        
+        if breaker == 2:
             break
         
         breaker += 1
@@ -276,18 +278,17 @@ def return_static_shedule(container : list, folder_ : str) -> list:
             teacher = shedule_index.row_values(i)[3]
             cabinet = shedule_index.row_values(i)[4]  
             
-            if day in days:
+            if _day is not None:
+                if lesson != "Предмет":
+                    _day.push_lesson(Lesson(lesson, group, cabinet, teacher))    
+        
+            if day in days:       
+                if _day is not None:
+                    student_shedule.append(_day)
+                            
                 _day = Day(day)
-                _day.push_day_shedule(temp_day)
-                
-                student_shedule.append(_day)
-                
-                temp_day = list()                    
-                access = True
-                
-            if access:
-                temp_day.append(Lesson(lesson, group, cabinet, teacher))
-                
+            
+                            
         student.push_shedule(student_shedule)
         DATA.append(student)
     
