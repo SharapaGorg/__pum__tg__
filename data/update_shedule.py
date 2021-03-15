@@ -1,6 +1,6 @@
 import sys
 
-from utils import filler, return_static_shedule
+from utils import filler, return_static_shedule, write_list_to_json
 
 students = list() # Member(identity, _course, index_of_excel_table) * len(students)
 
@@ -20,3 +20,5 @@ filler(folder, students, 10, 6, {}, 9)
 filler(folder, students, 11, 6, {9 : 7, 11 : 7}, 0)
 
 data = return_static_shedule(students, folder)
+
+write_list_to_json(data, "SHEDULE_DATA.json")

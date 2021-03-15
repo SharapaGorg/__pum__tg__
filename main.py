@@ -1,8 +1,13 @@
 import os, sys
+from re import split
 
 from data.config import settings
 from data.LogPython import LogManager
-from data.__init__ import select_id, item_list
+from data.__init__ import select_id
+from data.utils import find_students_with_facts, item_list
+
+if sys.platform == "win32" : spliter = "\\"
+else: spliter = "/"
 
 try:
     from aiogram import Bot, types
@@ -12,12 +17,11 @@ try:
     from aiogram.contrib.fsm_storage.memory import MemoryStorage
     from aiogram.utils import executor
 except:
-    if sys.platform == "win32":
-        os.system("python data\deps.py")        
-    else:
-        os.system("python3 data/deps.py")
+    os.system(f"python3 data{spliter}deps.py")
         
     sys.exit(0)
+
+SHEDULE_FILE = "data" + spliter + "SHEDULE_DATA.json"
 
 bot = Bot(token = settings['TOKEN'])
 dp = Dispatcher(bot, storage=MemoryStorage())
@@ -55,25 +59,27 @@ async def items_list(msg : types.Message):
         
     await bot.send_message(msg.from_user.id, res)
 
-# @dp.message_handler(state = FindingLessonDataInput.r)
-# async def find_victim(msg : types.Message, state : FSMContext):
-#     r = msg.text
-#     data = r.split()
-#     try:
-#         handled = select_item(item = data[0], index = int(data[1]), day = data[2])
-        
-#         res = str()
-
-#         for student in handled:
-#             res += ("- " + student + " \n")
-            
-#         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
+@dp.message_handler(state = FindingLessonDataInput.r)
+async def find_victim(msg : types.Message, state : FSMContext):
+    r = msg.text
+    data = r.split()
     
-#         await bot.send_message(msg.from_user.id, res)
-#     except Exception as e:
-#         await bot.send_message(msg.from_user.id, "Вероятнее всего, таких людей нет)")
+    result = str()
+    
+    try:
+        student_list = find_students_with_facts(SHEDULE_FILE, data[0].lower(), data[1].lower(), data[2].lower())
         
-#     await state.finish()
+        for member in student_list:
+            result += ("- " + member + " \n")
+        
+        LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
+        
+        await bot.send_message(msg.from_user.id, result)
+        
+    except Exception as ex:
+        await bot.send_message(msg.from_user.id, ex)
+    
+    await state.finish()
 
 @dp.message_handler(state = SheduleDataInput.r)
 async def shedule(msg : types.Message, state : FSMContext):

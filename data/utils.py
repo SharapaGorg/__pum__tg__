@@ -135,120 +135,13 @@ def item_list() -> list:
     result = set(container)
             
     return result
-        
-def telegram_shedule(object_shedule : list) -> list:
-    """
-    
-    :return:
-    
-    String arch shedule instead Object arch shedule ->
-    
-    [
-        {
-            Member.name : 
-                    [
-                        {
-                            Day.name : 
-                                    [
-                                        Lesson.name,
-                                        Lesson.name,
-                                        Lesson.name,
-                                        ...
-                                    ]
-                        },
-                            Day.name : 
-                                    [
-                                        Lesson.name,
-                                        Lesson.name,
-                                        Lesson.name,
-                                        ...
-                                    ],
-                            ...
-                    ]
-        },
-        ...
-        
-    ]
-    
-    """
-    
-    string_shedule = list()
-    
-    for member in object_shedule:
-        member_shedule = list()
-        
-        for day in member.shedule:
-            member_shedule.append(day_shedule_part(day))
-            
-        string_shedule.append( { member.name : member_shedule } )
-        
-    return string_shedule
-    
-def day_shedule_part(day : Day) -> dict:
-    """
-    
-    Convert: 
-    
-    Day ->
-        Day.name
-        Day.shedule ->
-                        [
-                            Lesson ->
-                                    Lesson.name
-                                    Lesson.group
-                                    Lesson.teacher
-                                    Lesson.cabinet
-                            ...
-                        ]
-                        
-    To:
-    
-    {
-        Day.name : 
-                [
-                    Lesson.name,
-                    ...
-                ]
-    }
-    
-    """    
-    
-    _value = list()
-    
-    for lesson in day.shedule:
-        _value.append(lesson.name)
-        
-    return { day.name : _value }
-           
-def return_static_shedule(container : list, folder_ : str) -> list:
+ 
+def return_static_shedule(container : list, folder_ : str) -> dict:
     """
    
     :return:
     
-    Object arch shedule ->
-    
-    [
-        Member ->
-                - Member.name
-                - Member.year
-                - Member.excel_index
-                - Member.shedule ->
-                    [
-                        Day  ->
-                                - Day.name
-                                - Day.shedule -> 
-                                    [
-                                        Lesson -> 
-                                                - Lesson.name
-                                                - Lesson.group
-                                                - Lesson.teacher
-                                                - Lesson.cabinet
-                                        ...
-                                    ]
-                        ...
-                    ]
-        ...
-    ]
+    telegram_shedule(object_shedule)
 
     """
 
@@ -284,9 +177,144 @@ def return_static_shedule(container : list, folder_ : str) -> list:
     
     res = telegram_shedule(DATA)    
     return res
+        
+def telegram_shedule(object_shedule : list) -> dict:
+    """
+        
+    Convert:
+    
+    Object arch shedule ->
+    
+    [
+        Member ->
+                - Member.name
+                - Member.year
+                - Member.excel_index
+                - Member.shedule ->
+                    [
+                        Day  ->
+                                - Day.name
+                                - Day.shedule -> 
+                                    [
+                                        Lesson -> 
+                                                - Lesson.name
+                                                - Lesson.group
+                                                - Lesson.teacher
+                                                - Lesson.cabinet
+                                        ...
+                                    ]
+                        ...
+                    ]
+        ...
+    ]
+    
+    To: (:return:)
+    
+    String arch shedule instead Object arch shedule ->
+    
+        {
+            Member.name : 
+                    [
+                        {
+                            Day.name : 
+                                    [
+                                        Lesson.name,
+                                        Lesson.name,
+                                        Lesson.name,
+                                        ...
+                                    ]
+                        },
+                            Day.name : 
+                                    [
+                                        Lesson.name,
+                                        Lesson.name,
+                                        Lesson.name,
+                                        ...
+                                    ],
+                            ...
+                    ],
+            ...
+        }
+    
+    """
+    
+    string_shedule = dict()
+    
+    for member in object_shedule:
+        member_shedule = dict()
+        
+        for day in member.shedule:
+            day_, lessons = day_shedule_part(day)
+            
+            member_shedule[day_.lower()] = lessons
+            
+        string_shedule[member.name] = member_shedule
+        
+    return string_shedule
+    
+def day_shedule_part(day : Day) -> tuple:
+    """
+    
+    Convert: 
+    
+    Day ->
+        Day.name
+        Day.shedule ->
+                        [
+                            Lesson ->
+                                    Lesson.name
+                                    Lesson.group
+                                    Lesson.teacher
+                                    Lesson.cabinet
+                            ...
+                        ]
+                        
+    To:
+    
+    {
+        Day.name : 
+                [
+                    Lesson.name,
+                    ...
+                ]
+    }
+    
+    """    
+    
+    _value = list()
+    
+    for lesson in day.shedule:
+        _value.append(lesson.name)
+        
+    return (day.name, _value)
                 
 def write_list_to_json(data_list : list, filename : str):
-    with open(filename, "w", encoding = "utf-8") as wrote:
-        target = str(data_list)
+    with open(filename, "w", encoding = "utf-8") as wrote:        
+        json.dump(data_list, wrote, ensure_ascii=False)
         
+def find_students_with_facts(data_file : str, day : str, lesson : str, lesson_index : int) -> list:
+    """
+    
+    :return:
+    
+    list of students, that have necessary facts
+    
+    In 'Not found' case returns Exception    
+    
+    """
+    
+    with open(data_file, "r", encoding = "utf-8") as data_container:
+        data = json.loads(data_container.readline())
         
+        result = list()
+        
+        for member in data:
+            try:
+                if data[member][day][int(lesson_index) - 1].lower() == lesson.lower():
+                    result.append(member)
+            except: pass
+                    
+        if not result:
+            raise Exception("No one have this lesson in this day in this lesson_index :(")
+        
+        return result
