@@ -222,7 +222,7 @@ def day_shedule_part(day : Day) -> dict:
            
 def return_static_shedule(container : list, folder_ : str) -> list:
     """
-
+   
     :return:
     
     Object arch shedule ->
