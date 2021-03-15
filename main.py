@@ -47,7 +47,7 @@ async def proccess_shedule_command(msg : types.Message):
     
 @dp.message_handler(commands = ['find_victim'])
 async def proccess_find_victim_command(msg : types.Message):
-    await bot.send_message(msg.chat.id, "Напишите запрос в формате урок урок_по_счёту день_недели\nНапример:\nинфорМАтика 1 чеТвеРГ\nоКНо 2 втОрник")
+    await bot.send_message(msg.chat.id, "Напишите запрос в формате день_недели урок урок_по_счёту\nНапример:\nчеТвеРГ инфорМАтика 1\nвтОрник оКНо 2")
     await FindingLessonDataInput.r.set()
     
 @dp.message_handler(commands = ['item_list'])
