@@ -253,18 +253,12 @@ def return_static_shedule(container : list, folder_ : str) -> list:
     """
 
     DATA = list() # list type of : [Member.shedule = Day.shedule = [Lesson(...) * len(list)]]
-    breaker = 0
     
     for student in container:
-        _day = None
+        access_name = None
+        obj_days = [Day(elem) for elem in days]
         
-        if breaker == 2:
-            break
-        
-        breaker += 1
         print(student.name)
-        
-        student_shedule, temp_day,  access = list(), list(), False
         
         src_path = folder_ + student.year
         SRC = xlrd.open_workbook(src_path)
@@ -277,27 +271,22 @@ def return_static_shedule(container : list, folder_ : str) -> list:
             group = shedule_index.row_values(i)[2]
             teacher = shedule_index.row_values(i)[3]
             cabinet = shedule_index.row_values(i)[4]  
-            
-            if _day is not None:
+         
+            if access_name is not None:
                 if lesson != "Предмет":
-                    _day.push_lesson(Lesson(lesson, group, cabinet, teacher))    
+                    obj_days[days.index(access_name)].push_lesson(Lesson(lesson, group, cabinet, teacher))
+         
+            if day in days:
+                access_name = day
         
-            if day in days:       
-                if _day is not None:
-                    student_shedule.append(_day)
-                            
-                _day = Day(day)
-            
-                            
-        student.push_shedule(student_shedule)
+        student.push_shedule(obj_days)
         DATA.append(student)
     
-    res = telegram_shedule(DATA)
-    print(res)
-    
+    res = telegram_shedule(DATA)    
     return res
                 
 def write_list_to_json(data_list : list, filename : str):
     with open(filename, "w", encoding = "utf-8") as wrote:
         target = str(data_list)
+        
         
