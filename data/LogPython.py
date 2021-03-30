@@ -112,13 +112,13 @@ class LogManager:
         return ' ' + input(LogManager.prefix('OUTPUT')) + ' '
 
     @staticmethod
-    def get_logs(qantiny:int, *args) -> list:
+    def get_logs(quantiny:int, *args) -> list:
         
         _ = open("LogPython_info.log", "r").readlines()
         
         res = list()
         
-        res.append(_[len(_) - qantiny:])
+        res.append(_[len(_) - quantiny:])
         
         return res
 

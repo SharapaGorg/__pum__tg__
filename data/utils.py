@@ -45,8 +45,12 @@ class Lesson:
             self.cab = str(int(float(cab)))
         except:
             self.cab = cab
+        
+        if name != '':
+            self.name = name
+        else:
+            self.name = "Окно"
             
-        self.name = name
         self.group = group
         self.teacher = teacher
         
