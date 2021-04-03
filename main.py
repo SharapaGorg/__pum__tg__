@@ -63,13 +63,13 @@ async def find_victim(msg : types.Message, state : FSMContext):
     r = msg.text
     data = r.split()
     
-    result = str()
+    result = "Номер параллели - Фамилия Имя Отчество\n\n"
     
     try:
         student_list = find_students_with_facts(SHEDULE_FILE, data[0].lower(), data[1].lower(), data[2].lower())
         
         for member in student_list:
-            result += ("- " + member + " \n")
+            result += (member[1] + " - " + member[0] + " \n")
         
         LogManager.info(f"{msg.from_user.full_name} called {sys._getframe().f_code.co_name} [{msg.text}]")
         

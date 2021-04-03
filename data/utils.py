@@ -265,7 +265,7 @@ def telegram_shedule(object_shedule : list) -> dict:
             
             member_shedule[day_.lower()] = lessons
             
-        string_shedule[member.name] = member_shedule
+        string_shedule[member.name] = [member.year.rstrip(".xlsx"), member_shedule]
         
     return string_shedule
     
@@ -327,8 +327,8 @@ def find_students_with_facts(data_file : str, day : str, lesson : str, lesson_in
         
         for member in data:
             try:
-                if data[member][day][int(lesson_index) - 1].lower() == lesson.lower():
-                    result.append(member)
+                if data[member][1][day][int(lesson_index) - 1].lower() == lesson.lower():
+                    result.append((member, data[member][0]))
             except: pass
                     
         if not result:
