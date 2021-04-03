@@ -84,10 +84,9 @@ async def find_victim(msg : types.Message, state : FSMContext):
 async def shedule(msg : types.Message, state : FSMContext):
     r = msg.text
     try:
-        res = str()
         data = select_id(r)
         
-        res += data.name + ":\n"
+        res = data.name + ":\n\nДень недели:\nВремя начала - кабинет Название\n"
         
         for day in data.shedule:
 
