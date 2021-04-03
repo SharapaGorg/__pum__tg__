@@ -6,12 +6,10 @@ if sys.platform == "win32" : spliter = "\\"
 else: spliter = "/"
 
 if __name__ == "__main__":
-    from utils import Day, Lesson
-    from utils import filler
+    from utils import Day, Lesson, filler, beller
     folder = "assets" + spliter
 else:
-    from data.utils import Day, Lesson
-    from data.utils import filler
+    from data.utils import Day, Lesson, filler, beller
     folder = "data" + spliter + "assets" + spliter
    
 filler(folder, members, 8, 7, {5 : 6} , 0)         # fill 8 course
@@ -39,6 +37,8 @@ def select_id(name : str):
     
     obj_days = [Day(days[i]) for i in range(len(days))]
     temp_day = ""
+     
+    bells_shedule = beller(identity.year)
      
     for i in range(data.nrows):
         lesson = data.row_values(i)[1]
@@ -70,6 +70,12 @@ def select_id(name : str):
                   
                 checker += 1
                 
+    for obj_day in obj_days:
+        try:
+            for i in range(len(bells_shedule)):
+                obj_day.shedule[i].bell = bells_shedule[i]
+        except: pass        
+        
     identity.push_shedule(obj_days)
     
     return identity

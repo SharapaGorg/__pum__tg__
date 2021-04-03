@@ -7,6 +7,7 @@ students = list() # Member(identity, _course, index_of_excel_table) * len(studen
 if sys.platform == "win32" : spliter = "\\"
 else: spliter = "/"
 
+
 if __name__ == "__main__":
     folder = "assets" + spliter
 else:

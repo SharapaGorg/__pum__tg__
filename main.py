@@ -1,5 +1,4 @@
 import os, sys
-from re import split
 
 from data.config import settings
 from data.LogPython import LogManager
@@ -103,7 +102,7 @@ async def shedule(msg : types.Message, state : FSMContext):
                     spacer = 4
                 
                 try:
-                    res += temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
+                    res += elem.bell + " - " + temp_cab + elem.cab + ' ' * (16 - len(elem.cab) - len(temp_cab) - spacer) + str(elem) + '\n'
                 except:
                     pass
                 

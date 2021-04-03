@@ -4,6 +4,9 @@ import json
 if sys.platform == "win32" : spliter = "\\"
 else: spliter = "/"
 
+try: from constants import bells_8_9, bells_10_11, days
+except: from data.constants import bells_8_9, bells_10_11, days
+
 if __name__ == "__main__":
     folder = "assets" + spliter
 else:
@@ -40,7 +43,7 @@ class Day:
         return self.name[0] + self.name[1:]
     
 class Lesson:
-    def __init__(self, name, group : str, cab : str, teacher : str):
+    def __init__(self, name, group : str, cab : str, teacher : str, bell : str = None):
         try:
             self.cab = str(int(float(cab)))
         except:
@@ -53,14 +56,13 @@ class Lesson:
             
         self.group = group
         self.teacher = teacher
+        self.bell = bell
         
     def __str__(self) -> str:
         try:
             return self.name[0].upper() + self.name[1:]
         except:
             raise Exception("-")
-
-days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
 
 def is_indentity( name_object : str ) -> bool:
     return name_object != '' and len(name_object.split()) == 3
@@ -140,6 +142,16 @@ def item_list() -> list:
             
     return result
  
+def beller(course : str) -> list:
+    course = course.rstrip(".xlsx")
+    
+    if course == "8" or course == "9":
+        return bells_8_9
+    elif course == "10" or course == "11":
+        return bells_10_11
+    else:
+        raise Exception("Bells shedule not found")
+ 
 def return_static_shedule(container : list, folder_ : str) -> dict:
     """
    
@@ -154,6 +166,7 @@ def return_static_shedule(container : list, folder_ : str) -> dict:
     for student in container:
         access_name = None
         obj_days = [Day(elem) for elem in days]
+        bells = beller(student.year)
         
         print(student.name)
         
