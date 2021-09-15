@@ -1,0 +1,893 @@
+[09/12/2021 10:32:33 PM] [data.LogPython 13156] [INFO   ] Success connected
+[09/12/2021 10:32:44 PM] [data.LogPython 13156] [ERROR  ] can only concatenate str (not "int") to str
+[09/12/2021 10:33:47 PM] [data.LogPython 13096] [INFO   ] Success connected
+[09/12/2021 10:33:54 PM] [data.LogPython 13096] [ERROR  ] [WinError 3] The system cannot find the path specified: 'assets\\8'
+[09/12/2021 10:35:37 PM] [data.LogPython 13892] [INFO   ] Success connected
+[09/12/2021 10:35:45 PM] [data.LogPython 13892] [ERROR  ] [WinError 3] The system cannot find the path specified: 'assets\\8'
+[09/12/2021 10:37:15 PM] [data.LogPython 2268 ] [INFO   ] Success connected
+[09/12/2021 10:37:21 PM] [data.LogPython 2268 ] [ERROR  ] [WinError 3] The system cannot find the path specified: 'dataassets\\8'
+[09/12/2021 10:37:35 PM] [data.LogPython 7952 ] [INFO   ] Success connected
+[09/12/2021 10:37:39 PM] [data.LogPython 7952 ] [ERROR  ] [WinError 3] The system cannot find the path specified: 'data\\assets\\8'
+[09/12/2021 10:37:58 PM] [data.LogPython 4056 ] [INFO   ] Success connected
+[09/12/2021 10:38:03 PM] [data.LogPython 4056 ] [ERROR  ] [WinError 3] The system cannot find the path specified: 'assets\\8'
+[09/12/2021 10:38:16 PM] [data.LogPython 2584 ] [INFO   ] Success connected
+[09/12/2021 10:38:22 PM] [data.LogPython 2584 ] [INFO   ] // Егор Душин // called shedule [а а а]
+[09/12/2021 10:50:13 PM] [data.LogPython 3420 ] [INFO   ] Success connected
+[09/12/2021 10:50:24 PM] [data.LogPython 3420 ] [ERROR  ] Student not found
+[09/12/2021 10:51:12 PM] [data.LogPython 3420 ] [ERROR  ] [Errno 2] No such file or directory: 'Апананский Леон Леонидович.xlsx'
+[09/12/2021 10:51:35 PM] [data.LogPython 12456] [INFO   ] Success connected
+[09/12/2021 10:51:57 PM] [data.LogPython 12456] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:53:15 PM] [data.LogPython 13124] [INFO   ] Success connected
+[09/12/2021 10:53:49 PM] [data.LogPython 13124] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:56:46 PM] [data.LogPython 4536 ] [INFO   ] Success connected
+[09/12/2021 10:56:53 PM] [data.LogPython 4536 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:57:04 PM] [data.LogPython 11384] [INFO   ] Success connected
+[09/12/2021 10:57:15 PM] [data.LogPython 11384] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:57:27 PM] [data.LogPython 3112 ] [INFO   ] Success connected
+[09/12/2021 10:57:34 PM] [data.LogPython 3112 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:57:53 PM] [data.LogPython 14012] [INFO   ] Success connected
+[09/12/2021 10:57:59 PM] [data.LogPython 14012] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 10:58:26 PM] [data.LogPython 9784 ] [INFO   ] Success connected
+[09/12/2021 10:58:31 PM] [data.LogPython 9784 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:04:30 PM] [data.LogPython 8748 ] [INFO   ] Success connected
+[09/12/2021 11:04:35 PM] [data.LogPython 8748 ] [ERROR  ] local variable 'first_col' referenced before assignment
+[09/12/2021 11:05:15 PM] [data.LogPython 12728] [INFO   ] Success connected
+[09/12/2021 11:05:20 PM] [data.LogPython 12728] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:06:13 PM] [data.LogPython 3068 ] [INFO   ] Success connected
+[09/12/2021 11:06:21 PM] [data.LogPython 3068 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:06:48 PM] [data.LogPython 11236] [INFO   ] Success connected
+[09/12/2021 11:06:55 PM] [data.LogPython 11236] [ERROR  ] Student not found
+[09/12/2021 11:06:58 PM] [data.LogPython 11236] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:14:16 PM] [data.LogPython 1492 ] [INFO   ] Success connected
+[09/12/2021 11:14:24 PM] [data.LogPython 1492 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:15:37 PM] [data.LogPython 9796 ] [INFO   ] Success connected
+[09/12/2021 11:15:41 PM] [data.LogPython 9796 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:18:29 PM] [data.LogPython 7880 ] [INFO   ] Success connected
+[09/12/2021 11:18:37 PM] [data.LogPython 7880 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:19:26 PM] [data.LogPython 9472 ] [INFO   ] Success connected
+[09/12/2021 11:19:35 PM] [data.LogPython 9472 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:19:47 PM] [data.LogPython 12460] [INFO   ] Success connected
+[09/12/2021 11:19:56 PM] [data.LogPython 12460] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:21:59 PM] [data.LogPython 10768] [INFO   ] Success connected
+[09/12/2021 11:22:07 PM] [data.LogPython 10768] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:22:44 PM] [data.LogPython 10416] [INFO   ] Success connected
+[09/12/2021 11:22:48 PM] [data.LogPython 10416] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:23:04 PM] [data.LogPython 15136] [INFO   ] Success connected
+[09/12/2021 11:23:12 PM] [data.LogPython 15136] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:24:00 PM] [data.LogPython 4160 ] [INFO   ] Success connected
+[09/12/2021 11:24:05 PM] [data.LogPython 4160 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:31:49 PM] [data.LogPython 5424 ] [INFO   ] Success connected
+[09/12/2021 11:31:54 PM] [data.LogPython 5424 ] [ERROR  ] local variable '_StudentShedule__day' referenced before assignment
+[09/12/2021 11:32:28 PM] [data.LogPython 5876 ] [INFO   ] Success connected
+[09/12/2021 11:32:32 PM] [data.LogPython 5876 ] [ERROR  ] local variable '_StudentShedule__day' referenced before assignment
+[09/12/2021 11:32:44 PM] [data.LogPython 7948 ] [INFO   ] Success connected
+[09/12/2021 11:32:49 PM] [data.LogPython 7948 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:34:50 PM] [data.LogPython 5732 ] [INFO   ] Success connected
+[09/12/2021 11:34:55 PM] [data.LogPython 5732 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:35:37 PM] [data.LogPython 11704] [INFO   ] Success connected
+[09/12/2021 11:35:43 PM] [data.LogPython 11704] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:36:21 PM] [data.LogPython 4536 ] [INFO   ] Success connected
+[09/12/2021 11:36:28 PM] [data.LogPython 4536 ] [ERROR  ] Student not found
+[09/12/2021 11:36:34 PM] [data.LogPython 4536 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:37:07 PM] [data.LogPython 14516] [INFO   ] Success connected
+[09/12/2021 11:37:11 PM] [data.LogPython 14516] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:38:35 PM] [data.LogPython 13980] [INFO   ] Success connected
+[09/12/2021 11:38:38 PM] [data.LogPython 13980] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:38:56 PM] [data.LogPython 5644 ] [INFO   ] Success connected
+[09/12/2021 11:38:59 PM] [data.LogPython 5644 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:40:10 PM] [data.LogPython 744  ] [INFO   ] Success connected
+[09/12/2021 11:40:15 PM] [data.LogPython 744  ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:41:06 PM] [data.LogPython 11252] [INFO   ] Success connected
+[09/12/2021 11:41:11 PM] [data.LogPython 11252] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:41:26 PM] [data.LogPython 6760 ] [INFO   ] Success connected
+[09/12/2021 11:41:30 PM] [data.LogPython 6760 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:43:13 PM] [data.LogPython 5868 ] [INFO   ] Success connected
+[09/12/2021 11:43:21 PM] [data.LogPython 5868 ] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:44:41 PM] [data.LogPython 13096] [INFO   ] Success connected
+[09/12/2021 11:44:53 PM] [data.LogPython 13096] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:45:43 PM] [data.LogPython 12384] [INFO   ] Success connected
+[09/12/2021 11:45:48 PM] [data.LogPython 12384] [INFO   ] // Егор Душин // called shedule [Апан]
+[09/12/2021 11:46:36 PM] [data.LogPython 8776 ] [INFO   ] Success connected
+[09/12/2021 11:46:41 PM] [data.LogPython 8776 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:51:48 PM] [data.LogPython 9612 ] [INFO   ] Success connected
+[09/12/2021 11:51:55 PM] [data.LogPython 9612 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:54:15 PM] [data.LogPython 5372 ] [INFO   ] Success connected
+[09/12/2021 11:54:23 PM] [data.LogPython 5372 ] [ERROR  ] can only concatenate str (not "builtin_function_or_method") to str
+[09/12/2021 11:54:23 PM] [data.LogPython 5372 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 61, in shedule
+    res += "\n" + day.title + ":\n"
+TypeError: can only concatenate str (not "builtin_function_or_method") to str
+
+[09/12/2021 11:55:36 PM] [data.LogPython 14536] [INFO   ] Success connected
+[09/12/2021 11:55:39 PM] [data.LogPython 14536] [ERROR  ] 'str' object has no attribute 'name'
+[09/12/2021 11:55:39 PM] [data.LogPython 14536] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 61, in shedule
+    res += "\n" + day.name + ":\n"
+AttributeError: 'str' object has no attribute 'name'
+
+[09/12/2021 11:56:19 PM] [data.LogPython 3420 ] [INFO   ] Success connected
+[09/12/2021 11:56:25 PM] [data.LogPython 14704] [INFO   ] Success connected
+[09/12/2021 11:56:32 PM] [data.LogPython 14704] [ERROR  ] 'str' object has no attribute 'shedule'
+[09/12/2021 11:56:32 PM] [data.LogPython 14704] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 65, in shedule
+    for elem in day.shedule:
+AttributeError: 'str' object has no attribute 'shedule'
+
+[09/12/2021 11:57:22 PM] [data.LogPython 6524 ] [INFO   ] Success connected
+[09/12/2021 11:57:36 PM] [data.LogPython 10600] [INFO   ] Success connected
+[09/12/2021 11:57:41 PM] [data.LogPython 10600] [ERROR  ] can only concatenate str (not "dict") to str
+[09/12/2021 11:57:41 PM] [data.LogPython 10600] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 60, in shedule
+    res += "\n" + data.shedule[day] + ":\n"
+TypeError: can only concatenate str (not "dict") to str
+
+[09/12/2021 11:58:00 PM] [data.LogPython 10672] [INFO   ] Success connected
+[09/12/2021 11:58:05 PM] [data.LogPython 10672] [ERROR  ] 'str' object has no attribute 'shedule'
+[09/12/2021 11:58:05 PM] [data.LogPython 10672] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 62, in shedule
+    for elem in day.shedule:
+AttributeError: 'str' object has no attribute 'shedule'
+
+[09/12/2021 11:58:29 PM] [data.LogPython 2784 ] [INFO   ] Success connected
+[09/12/2021 11:58:33 PM] [data.LogPython 2784 ] [ERROR  ] 'dict' object has no attribute 'shedule'
+[09/12/2021 11:58:33 PM] [data.LogPython 2784 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 62, in shedule
+    for elem in (data.shedule[day]).shedule:
+AttributeError: 'dict' object has no attribute 'shedule'
+
+[09/12/2021 11:58:51 PM] [data.LogPython 4584 ] [INFO   ] Success connected
+[09/12/2021 11:58:55 PM] [data.LogPython 4584 ] [ERROR  ] 'str' object has no attribute 'cab'
+[09/12/2021 11:58:55 PM] [data.LogPython 4584 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 65, in shedule
+    if len(elem.cab) < 3:
+AttributeError: 'str' object has no attribute 'cab'
+
+[09/15/2021 06:33:27 PM] [data.LogPython 8108 ] [INFO   ] Success connected
+[09/15/2021 06:36:23 PM] [data.LogPython 8108 ] [ERROR  ] Student not found
+[09/15/2021 06:36:23 PM] [data.LogPython 8108 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r, "8")
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 88, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 06:37:10 PM] [data.LogPython 8108 ] [ERROR  ] 'str' object has no attribute 'cab'
+[09/15/2021 06:37:10 PM] [data.LogPython 8108 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 65, in shedule
+    if len(elem.cab) < 3:
+AttributeError: 'str' object has no attribute 'cab'
+
+[09/15/2021 06:38:25 PM] [data.LogPython 3340 ] [INFO   ] Success connected
+[09/15/2021 06:38:46 PM] [data.LogPython 3340 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:39:23 PM] [data.LogPython 6288 ] [INFO   ] Success connected
+[09/15/2021 06:39:29 PM] [data.LogPython 6288 ] [ERROR  ] 'str' object has no attribute 'shedule'
+[09/15/2021 06:39:29 PM] [data.LogPython 6288 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 70, in shedule
+    print(elem.shedule)
+AttributeError: 'str' object has no attribute 'shedule'
+
+[09/15/2021 06:40:13 PM] [data.LogPython 2540 ] [INFO   ] Success connected
+[09/15/2021 06:40:17 PM] [data.LogPython 2540 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:42:16 PM] [data.LogPython 4556 ] [INFO   ] Success connected
+[09/15/2021 06:42:20 PM] [data.LogPython 4556 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:43:16 PM] [data.LogPython 11148] [INFO   ] Success connected
+[09/15/2021 06:43:26 PM] [data.LogPython 11148] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:43:49 PM] [data.LogPython 9128 ] [INFO   ] Success connected
+[09/15/2021 06:43:54 PM] [data.LogPython 9128 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:45:29 PM] [data.LogPython 13852] [INFO   ] Success connected
+[09/15/2021 06:45:33 PM] [data.LogPython 13852] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:46:47 PM] [data.LogPython 14532] [INFO   ] Success connected
+[09/15/2021 06:46:51 PM] [data.LogPython 14532] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:47:23 PM] [data.LogPython 10092] [INFO   ] Success connected
+[09/15/2021 06:47:28 PM] [data.LogPython 10092] [ERROR  ] 'Lesson' object has no attribute 'shedule'
+[09/15/2021 06:47:28 PM] [data.LogPython 10092] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 70, in shedule
+    print(elem.shedule)
+AttributeError: 'Lesson' object has no attribute 'shedule'
+
+[09/15/2021 06:47:38 PM] [data.LogPython 4756 ] [INFO   ] Success connected
+[09/15/2021 06:47:46 PM] [data.LogPython 4756 ] [ERROR  ] object of type 'float' has no len()
+[09/15/2021 06:47:46 PM] [data.LogPython 4756 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 65, in shedule
+    if len(elem.cab) < 3:
+TypeError: object of type 'float' has no len()
+
+[09/15/2021 06:48:19 PM] [data.LogPython 2200 ] [INFO   ] Success connected
+[09/15/2021 06:48:29 PM] [data.LogPython 2200 ] [ERROR  ] invalid literal for int() with base 10: ''
+[09/15/2021 06:48:29 PM] [data.LogPython 2200 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r, "8")
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 78, in __init__
+    __lesson = Lesson(second_col, third_col, fourth_col, fifth_col)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 42, in __init__
+    self.cab = int(cab)
+ValueError: invalid literal for int() with base 10: ''
+
+[09/15/2021 06:48:47 PM] [data.LogPython 11372] [INFO   ] Success connected
+[09/15/2021 06:48:57 PM] [data.LogPython 11372] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:49:28 PM] [data.LogPython 3052 ] [INFO   ] Success connected
+[09/15/2021 06:49:41 PM] [data.LogPython 3052 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 06:54:21 PM] [data.LogPython 15328] [INFO   ] Success connected
+[09/15/2021 06:54:30 PM] [data.LogPython 15328] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 06:55:52 PM] [data.LogPython 14604] [INFO   ] Success connected
+[09/15/2021 06:56:39 PM] [data.LogPython 12668] [INFO   ] Success connected
+[09/15/2021 06:56:46 PM] [data.LogPython 12668] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 06:58:43 PM] [data.LogPython 8148 ] [INFO   ] Success connected
+[09/15/2021 07:06:28 PM] [data.LogPython 2724 ] [INFO   ] Success connected
+[09/15/2021 07:06:35 PM] [data.LogPython 2724 ] [ERROR  ] Student not found
+[09/15/2021 07:06:35 PM] [data.LogPython 2724 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 91, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 07:07:11 PM] [data.LogPython 2724 ] [ERROR  ] Student not found
+[09/15/2021 07:07:11 PM] [data.LogPython 2724 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 91, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 07:07:14 PM] [data.LogPython 2724 ] [ERROR  ] Student not found
+[09/15/2021 07:07:14 PM] [data.LogPython 2724 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 91, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 07:07:36 PM] [data.LogPython 1816 ] [INFO   ] Success connected
+[09/15/2021 07:07:49 PM] [data.LogPython 9964 ] [INFO   ] Success connected
+[09/15/2021 07:07:53 PM] [data.LogPython 9964 ] [ERROR  ] [WinError 3] The system cannot find the path specified: 'assets'
+[09/15/2021 07:07:53 PM] [data.LogPython 9964 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 56, in __init__
+    for student in os.listdir('assets'):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'assets'
+
+[09/15/2021 07:08:24 PM] [data.LogPython 9188 ] [INFO   ] Success connected
+[09/15/2021 07:08:32 PM] [data.LogPython 2052 ] [INFO   ] Success connected
+[09/15/2021 07:08:36 PM] [data.LogPython 2052 ] [ERROR  ] 'str' object has no attribute 'rstip'
+[09/15/2021 07:08:36 PM] [data.LogPython 2052 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 58, in __init__
+    self.name = student.rstip('.xlsx')
+AttributeError: 'str' object has no attribute 'rstip'
+
+[09/15/2021 07:08:46 PM] [data.LogPython 12236] [INFO   ] Success connected
+[09/15/2021 07:08:49 PM] [data.LogPython 12236] [ERROR  ] [Errno 2] No such file or directory: 'Забунов Максим Иванович.xlsx'
+[09/15/2021 07:08:49 PM] [data.LogPython 12236] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 61, in __init__
+    data =  xlrd.open_workbook(student).sheet_by_index(0)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\xlrd\__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Забунов Максим Иванович.xlsx'
+
+[09/15/2021 07:09:36 PM] [data.LogPython 568  ] [INFO   ] Success connected
+[09/15/2021 07:09:40 PM] [data.LogPython 568  ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:12:07 PM] [data.LogPython 13716] [INFO   ] Success connected
+[09/15/2021 07:12:12 PM] [data.LogPython 13716] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 07:18:39 PM] [data.LogPython 11508] [INFO   ] Success connected
+[09/15/2021 07:18:44 PM] [data.LogPython 11508] [ERROR  ] 'list' object has no attribute 'bell'
+[09/15/2021 07:18:44 PM] [data.LogPython 11508] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 90, in __init__
+    __week.shedule[day].bell = '12:12'
+AttributeError: 'list' object has no attribute 'bell'
+
+[09/15/2021 07:18:56 PM] [data.LogPython 1072 ] [INFO   ] Success connected
+[09/15/2021 07:19:01 PM] [data.LogPython 1072 ] [INFO   ] // Егор Душин // called shedule [За]
+[09/15/2021 07:19:20 PM] [data.LogPython 12768] [INFO   ] Success connected
+[09/15/2021 07:19:24 PM] [data.LogPython 12768] [INFO   ] // Егор Душин // called shedule [За]
+[09/15/2021 07:19:32 PM] [data.LogPython 12524] [INFO   ] Success connected
+[09/15/2021 07:19:35 PM] [data.LogPython 12524] [INFO   ] // Егор Душин // called shedule [За]
+[09/15/2021 07:20:59 PM] [data.LogPython 12524] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:20:59 PM] [data.LogPython 12524] [ERROR  ] Message is too long
+[09/15/2021 07:20:59 PM] [data.LogPython 12524] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:21:30 PM] [data.LogPython 12524] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:21:30 PM] [data.LogPython 12524] [ERROR  ] Message is too long
+[09/15/2021 07:21:30 PM] [data.LogPython 12524] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:24:01 PM] [data.LogPython 6624 ] [INFO   ] Success connected
+[09/15/2021 07:25:34 PM] [data.LogPython 6624 ] [ERROR  ] object of type 'Lesson' has no len()
+[09/15/2021 07:25:34 PM] [data.LogPython 6624 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 94, in __init__
+    if (len(_lesson) == 0):
+TypeError: object of type 'Lesson' has no len()
+
+[09/15/2021 07:25:45 PM] [data.LogPython 3056 ] [INFO   ] Success connected
+[09/15/2021 07:25:51 PM] [data.LogPython 3056 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:26:25 PM] [data.LogPython 3056 ] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:26:25 PM] [data.LogPython 3056 ] [ERROR  ] Message is too long
+[09/15/2021 07:26:25 PM] [data.LogPython 3056 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:26:40 PM] [data.LogPython 3056 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:26:41 PM] [data.LogPython 3056 ] [ERROR  ] Message is too long
+[09/15/2021 07:26:41 PM] [data.LogPython 3056 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:26:50 PM] [data.LogPython 10532] [INFO   ] Success connected
+[09/15/2021 07:26:57 PM] [data.LogPython 10532] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:27:03 PM] [data.LogPython 10532] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:27:03 PM] [data.LogPython 10532] [ERROR  ] Message is too long
+[09/15/2021 07:27:03 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:27:06 PM] [data.LogPython 10532] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:27:07 PM] [data.LogPython 10532] [ERROR  ] Message is too long
+[09/15/2021 07:27:07 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:27:11 PM] [data.LogPython 10532] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:27:12 PM] [data.LogPython 10532] [ERROR  ] Message is too long
+[09/15/2021 07:27:12 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:27:16 PM] [data.LogPython 10532] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:27:16 PM] [data.LogPython 10532] [ERROR  ] Message is too long
+[09/15/2021 07:27:16 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:27:21 PM] [data.LogPython 10532] [ERROR  ] Student not found
+[09/15/2021 07:27:21 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 102, in __init__
+    return self.name
+Exception: Student not found
+
+[09/15/2021 07:27:26 PM] [data.LogPython 10532] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:27:26 PM] [data.LogPython 10532] [ERROR  ] Message is too long
+[09/15/2021 07:27:26 PM] [data.LogPython 10532] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:27:32 PM] [data.LogPython 2672 ] [INFO   ] Success connected
+[09/15/2021 07:27:52 PM] [data.LogPython 2672 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:27:58 PM] [data.LogPython 2672 ] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:27:58 PM] [data.LogPython 2672 ] [ERROR  ] Message is too long
+[09/15/2021 07:27:58 PM] [data.LogPython 2672 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:29:21 PM] [data.LogPython 9116 ] [INFO   ] Success connected
+[09/15/2021 07:29:25 PM] [data.LogPython 9116 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:30:34 PM] [data.LogPython 6188 ] [INFO   ] Success connected
+[09/15/2021 07:30:37 PM] [data.LogPython 6188 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:30:47 PM] [data.LogPython 6188 ] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:30:47 PM] [data.LogPython 6188 ] [ERROR  ] Message is too long
+[09/15/2021 07:30:47 PM] [data.LogPython 6188 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:31:50 PM] [data.LogPython 10096] [INFO   ] Success connected
+[09/15/2021 07:32:06 PM] [data.LogPython 10096] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:32:19 PM] [data.LogPython 10096] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:32:22 PM] [data.LogPython 10096] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:32:22 PM] [data.LogPython 10096] [ERROR  ] Message is too long
+[09/15/2021 07:32:22 PM] [data.LogPython 10096] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:32:29 PM] [data.LogPython 10096] [INFO   ] 𝚎𝚡𝚎𝚍𝚗𝚊 called shedule [Быков]
+[09/15/2021 07:32:30 PM] [data.LogPython 10096] [ERROR  ] Message is too long
+[09/15/2021 07:32:30 PM] [data.LogPython 10096] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:33:05 PM] [data.LogPython 10096] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 07:33:05 PM] [data.LogPython 10096] [ERROR  ] Message is too long
+[09/15/2021 07:33:05 PM] [data.LogPython 10096] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:33:08 PM] [data.LogPython 10096] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 07:33:08 PM] [data.LogPython 10096] [ERROR  ] Message is too long
+[09/15/2021 07:33:08 PM] [data.LogPython 10096] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:33:11 PM] [data.LogPython 6260 ] [INFO   ] Success connected
+[09/15/2021 07:33:17 PM] [data.LogPython 6260 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:33:20 PM] [data.LogPython 6260 ] [INFO   ] // Егор Душин // called shedule [За]
+[09/15/2021 07:33:23 PM] [data.LogPython 6260 ] [INFO   ] // Егор Душин // called shedule [за]
+[09/15/2021 07:33:24 PM] [data.LogPython 6260 ] [ERROR  ] Message is too long
+[09/15/2021 07:33:24 PM] [data.LogPython 6260 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:33:32 PM] [data.LogPython 6260 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 07:33:32 PM] [data.LogPython 6260 ] [ERROR  ] Message is too long
+[09/15/2021 07:33:32 PM] [data.LogPython 6260 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:34:33 PM] [data.LogPython 6260 ] [INFO   ] // Егор Душин // called shedule [Забунов]
+[09/15/2021 07:34:33 PM] [data.LogPython 6260 ] [ERROR  ] Message is too long
+[09/15/2021 07:34:33 PM] [data.LogPython 6260 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:34:38 PM] [data.LogPython 5692 ] [INFO   ] Success connected
+[09/15/2021 07:34:57 PM] [data.LogPython 5692 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:35:06 PM] [data.LogPython 5692 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:36:06 PM] [data.LogPython 14976] [INFO   ] Success connected
+[09/15/2021 07:36:26 PM] [data.LogPython 14976] [INFO   ] // AlexeyZavar // called shedule [Слетков Алексей Сергеевич]
+[09/15/2021 07:36:37 PM] [data.LogPython 14976] [INFO   ] // AlexeyZavar // called shedule [Слетков Алексей Сергеевич]
+[09/15/2021 07:40:43 PM] [data.LogPython 14976] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:40:44 PM] [data.LogPython 14976] [ERROR  ] Message is too long
+[09/15/2021 07:40:44 PM] [data.LogPython 14976] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:44:56 PM] [data.LogPython 6972 ] [INFO   ] Success connected
+[09/15/2021 07:45:01 PM] [data.LogPython 6972 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 07:45:05 PM] [data.LogPython 6972 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:47:25 PM] [data.LogPython 12504] [INFO   ] Success connected
+[09/15/2021 07:47:30 PM] [data.LogPython 12504] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:47:47 PM] [data.LogPython 9200 ] [INFO   ] Success connected
+[09/15/2021 07:47:50 PM] [data.LogPython 9200 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:48:02 PM] [data.LogPython 9200 ] [ERROR  ] Student not found
+[09/15/2021 07:48:02 PM] [data.LogPython 9200 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 111, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 07:48:05 PM] [data.LogPython 9200 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:48:32 PM] [data.LogPython 9200 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:48:32 PM] [data.LogPython 9200 ] [ERROR  ] Message is too long
+[09/15/2021 07:48:32 PM] [data.LogPython 9200 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 77, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 07:53:00 PM] [data.LogPython 3616 ] [INFO   ] Success connected
+[09/15/2021 07:53:03 PM] [data.LogPython 3616 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:53:19 PM] [data.LogPython 8696 ] [INFO   ] Success connected
+[09/15/2021 07:53:25 PM] [data.LogPython 8696 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:53:31 PM] [data.LogPython 8696 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:54:22 PM] [data.LogPython 10352] [INFO   ] Success connected
+[09/15/2021 07:54:27 PM] [data.LogPython 10352] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:54:32 PM] [data.LogPython 10352] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:56:07 PM] [data.LogPython 10824] [INFO   ] Success connected
+[09/15/2021 07:56:13 PM] [data.LogPython 10824] [INFO   ] // Егор Душин // called shedule [Быко]
+[09/15/2021 07:56:20 PM] [data.LogPython 10824] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:59:03 PM] [data.LogPython 8452 ] [INFO   ] Success connected
+[09/15/2021 07:59:13 PM] [data.LogPython 8576 ] [INFO   ] Success connected
+[09/15/2021 07:59:17 PM] [data.LogPython 8576 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 07:59:20 PM] [data.LogPython 8576 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:00:12 PM] [data.LogPython 10252] [INFO   ] Success connected
+[09/15/2021 08:00:17 PM] [data.LogPython 10252] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:00:25 PM] [data.LogPython 10252] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:00:25 PM] [data.LogPython 10252] [ERROR  ] Message is too long
+[09/15/2021 08:00:25 PM] [data.LogPython 10252] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 78, in shedule
+    await bot.send_message(msg.from_user.id, res)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.MessageIsTooLong: Message is too long
+
+[09/15/2021 08:01:10 PM] [data.LogPython 3872 ] [INFO   ] Success connected
+[09/15/2021 08:03:10 PM] [data.LogPython 7828 ] [INFO   ] Success connected
+[09/15/2021 08:03:17 PM] [data.LogPython 7828 ] [ERROR  ] list index out of range
+[09/15/2021 08:03:17 PM] [data.LogPython 7828 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 90, in __init__
+    __week.shedule[day].remove(__week.shedule[day][0])
+IndexError: list index out of range
+
+[09/15/2021 08:03:44 PM] [data.LogPython 6996 ] [INFO   ] Success connected
+[09/15/2021 08:03:59 PM] [data.LogPython 7848 ] [INFO   ] Success connected
+[09/15/2021 08:04:17 PM] [data.LogPython 7848 ] [ERROR  ] list index out of range
+[09/15/2021 08:04:17 PM] [data.LogPython 7848 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 90, in __init__
+    __week.shedule[day].remove(__week.shedule[day][0])
+IndexError: list index out of range
+
+[09/15/2021 08:05:24 PM] [data.LogPython 8924 ] [INFO   ] Success connected
+[09/15/2021 08:05:28 PM] [data.LogPython 8924 ] [ERROR  ] list index out of range
+[09/15/2021 08:05:28 PM] [data.LogPython 8924 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 91, in __init__
+    __week.shedule[day].remove(__week.shedule[day][0])
+IndexError: list index out of range
+
+[09/15/2021 08:09:57 PM] [data.LogPython 14676] [INFO   ] Success connected
+[09/15/2021 08:10:00 PM] [data.LogPython 14676] [ERROR  ] update_shedule() takes 2 positional arguments but 3 were given
+[09/15/2021 08:10:00 PM] [data.LogPython 14676] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 94, in __init__
+    __day.update_shedule(__day.title, __lesson)
+TypeError: update_shedule() takes 2 positional arguments but 3 were given
+
+[09/15/2021 08:10:20 PM] [data.LogPython 7252 ] [INFO   ] Success connected
+[09/15/2021 08:10:24 PM] [data.LogPython 7252 ] [ERROR  ] list indices must be integers or slices, not str
+[09/15/2021 08:10:24 PM] [data.LogPython 7252 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 56, in shedule
+    print(len(data.shedule['Понедельник']))
+TypeError: list indices must be integers or slices, not str
+
+[09/15/2021 08:11:00 PM] [data.LogPython 4764 ] [INFO   ] Success connected
+[09/15/2021 08:11:04 PM] [data.LogPython 4764 ] [ERROR  ] list indices must be integers or slices, not str
+[09/15/2021 08:11:04 PM] [data.LogPython 4764 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 56, in shedule
+    print(len(data.shedule['Понедельник']))
+TypeError: list indices must be integers or slices, not str
+
+[09/15/2021 08:12:03 PM] [data.LogPython 11020] [INFO   ] Success connected
+[09/15/2021 08:12:07 PM] [data.LogPython 11020] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:13:30 PM] [data.LogPython 14008] [INFO   ] Success connected
+[09/15/2021 08:13:34 PM] [data.LogPython 14008] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:14:11 PM] [data.LogPython 14008] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:14:18 PM] [data.LogPython 14008] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:17:19 PM] [data.LogPython 14008] [INFO   ] // Егор Душин // called shedule [Мельниченко]
+[09/15/2021 08:18:31 PM] [data.LogPython 14008] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:23:55 PM] [data.LogPython 8844 ] [INFO   ] Success connected
+[09/15/2021 08:24:07 PM] [data.LogPython 8844 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:24:29 PM] [data.LogPython 10028] [INFO   ] Success connected
+[09/15/2021 08:25:08 PM] [data.LogPython 10028] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:25:22 PM] [data.LogPython 10028] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:25:27 PM] [data.LogPython 10028] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:25:40 PM] [data.LogPython 10028] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:27:29 PM] [data.LogPython 2196 ] [INFO   ] Success connected
+[09/15/2021 08:27:34 PM] [data.LogPython 2196 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:28:03 PM] [data.LogPython 6668 ] [INFO   ] Success connected
+[09/15/2021 08:28:06 PM] [data.LogPython 6668 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:28:18 PM] [data.LogPython 3496 ] [INFO   ] Success connected
+[09/15/2021 08:28:21 PM] [data.LogPython 3496 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:29:19 PM] [data.LogPython 12144] [INFO   ] Success connected
+[09/15/2021 08:29:23 PM] [data.LogPython 12144] [ERROR  ] Student not found
+[09/15/2021 08:29:23 PM] [data.LogPython 12144] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 121, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/15/2021 08:29:28 PM] [data.LogPython 12144] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:30:38 PM] [data.LogPython 11008] [INFO   ] Success connected
+[09/15/2021 08:30:46 PM] [data.LogPython 11008] [INFO   ] // Егор Душин // called shedule [Реу]
+[09/15/2021 08:34:05 PM] [data.LogPython 14612] [INFO   ] Success connected
+[09/15/2021 08:34:09 PM] [data.LogPython 14612] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:34:19 PM] [data.LogPython 7864 ] [INFO   ] Success connected
+[09/15/2021 08:34:26 PM] [data.LogPython 7864 ] [ERROR  ] 'set' object has no attribute 'append'
+[09/15/2021 08:34:26 PM] [data.LogPython 7864 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 76, in shedule
+    groups.append(lesson.group)
+AttributeError: 'set' object has no attribute 'append'
+
+[09/15/2021 08:34:34 PM] [data.LogPython 14984] [INFO   ] Success connected
+[09/15/2021 08:34:39 PM] [data.LogPython 14984] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:36:24 PM] [data.LogPython 11956] [INFO   ] Success connected
+[09/15/2021 08:36:30 PM] [data.LogPython 11956] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:38:36 PM] [data.LogPython 11956] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:38:55 PM] [data.LogPython 11248] [INFO   ] Success connected
+[09/15/2021 08:39:02 PM] [data.LogPython 11248] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:39:15 PM] [data.LogPython 9768 ] [INFO   ] Success connected
+[09/15/2021 08:39:20 PM] [data.LogPython 9768 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:40:17 PM] [data.LogPython 7704 ] [INFO   ] Success connected
+[09/15/2021 08:40:23 PM] [data.LogPython 7704 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:40:49 PM] [data.LogPython 10744] [INFO   ] Success connected
+[09/15/2021 08:40:52 PM] [data.LogPython 10744] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:41:12 PM] [data.LogPython 7448 ] [INFO   ] Success connected
+[09/15/2021 08:41:16 PM] [data.LogPython 7448 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:41:50 PM] [data.LogPython 7936 ] [INFO   ] Success connected
+[09/15/2021 08:41:53 PM] [data.LogPython 7936 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:43:54 PM] [data.LogPython 6608 ] [INFO   ] Success connected
+[09/15/2021 08:44:00 PM] [data.LogPython 6608 ] [ERROR  ] 'set' object is not subscriptable
+[09/15/2021 08:44:00 PM] [data.LogPython 6608 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 84, in shedule
+    if (groups[i]): res += (groups[i - 2] + ' ')
+TypeError: 'set' object is not subscriptable
+
+[09/15/2021 08:45:11 PM] [data.LogPython 14760] [INFO   ] Success connected
+[09/15/2021 08:45:16 PM] [data.LogPython 14760] [ERROR  ] 'set' object is not subscriptable
+[09/15/2021 08:45:16 PM] [data.LogPython 14760] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 84, in shedule
+    if (groups[i]): res += (groups[i - 2] + ' ')
+TypeError: 'set' object is not subscriptable
+
+[09/15/2021 08:45:28 PM] [data.LogPython 9440 ] [INFO   ] Success connected
+[09/15/2021 08:45:33 PM] [data.LogPython 9440 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:45:57 PM] [data.LogPython 1048 ] [INFO   ] Success connected
+[09/15/2021 08:46:05 PM] [data.LogPython 1048 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:46:32 PM] [data.LogPython 10992] [INFO   ] Success connected
+[09/15/2021 08:46:38 PM] [data.LogPython 10992] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:46:57 PM] [data.LogPython 10576] [INFO   ] Success connected
+[09/15/2021 08:47:06 PM] [data.LogPython 10576] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:47:43 PM] [data.LogPython 6620 ] [INFO   ] Success connected
+[09/15/2021 08:47:47 PM] [data.LogPython 6620 ] [INFO   ] // Егор Душин // called shedule [Быков]
+[09/15/2021 08:48:27 PM] [data.LogPython 6620 ] [INFO   ] // Егор Душин // called shedule [Забу]
+[09/15/2021 08:53:47 PM] [data.LogPython 11940] [INFO   ] Success connected
+[09/15/2021 08:53:54 PM] [data.LogPython 11940] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:54:37 PM] [data.LogPython 5520 ] [INFO   ] Success connected
+[09/15/2021 08:54:40 PM] [data.LogPython 5520 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:56:37 PM] [data.LogPython 12876] [INFO   ] Success connected
+[09/15/2021 08:56:44 PM] [data.LogPython 12876] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 08:56:57 PM] [data.LogPython 9416 ] [INFO   ] Success connected
+[09/15/2021 08:57:01 PM] [data.LogPython 9416 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 09:00:23 PM] [data.LogPython 7328 ] [INFO   ] Success connected
+[09/15/2021 09:00:34 PM] [data.LogPython 7328 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 09:11:41 PM] [data.LogPython 7328 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/15/2021 09:12:10 PM] [data.LogPython 14704] [INFO   ] Success connected
+[09/15/2021 09:12:17 PM] [data.LogPython 14704] [INFO   ] // Егор Душин // called shedule [Борисов]
+[09/15/2021 09:12:17 PM] [data.LogPython 14704] [ERROR  ] Unsupported parse_mode
+[09/15/2021 09:12:17 PM] [data.LogPython 14704] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 94, in shedule
+    await bot.send_message(msg.from_user.id, res, parse_mode='bold')
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\bot.py", line 314, in send_message
+    result = await self.request(api.Methods.SEND_MESSAGE, payload)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\base.py", line 208, in request
+    return await api.make_request(self.session, self.server, self.__token, method, data, files,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\bot\api.py", line 115, in check_result
+    exceptions.BadRequest.detect(description)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\aiogram\utils\exceptions.py", line 141, in detect
+    raise cls(description)
+aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
+
+[09/15/2021 09:12:49 PM] [data.LogPython 12460] [INFO   ] Success connected
+[09/15/2021 09:12:55 PM] [data.LogPython 12460] [INFO   ] // Егор Душин // called shedule [Борисов]
+[09/15/2021 09:13:19 PM] [data.LogPython 9032 ] [INFO   ] Success connected
+[09/15/2021 09:13:36 PM] [data.LogPython 9032 ] [INFO   ] // Егор Душин // called shedule [Борисов Денис]
+[09/15/2021 09:14:27 PM] [data.LogPython 12688] [INFO   ] Success connected
+[09/15/2021 09:14:34 PM] [data.LogPython 4116 ] [INFO   ] Success connected
+[09/15/2021 09:14:40 PM] [data.LogPython 4116 ] [INFO   ] // Егор Душин // called shedule [Борисов]
+[09/15/2021 09:14:47 PM] [data.LogPython 9996 ] [INFO   ] Success connected
+[09/15/2021 09:14:49 PM] [data.LogPython 9996 ] [INFO   ] // Егор Душин // called shedule [Реутов]
