@@ -13,6 +13,7 @@ else:
     folder = "data" + spliter + "assets" + spliter
 
 window_counter = 0
+temp_group = str()
 
 class Day:
     def __init__(
@@ -83,10 +84,13 @@ class StudentShedule:
                         counter = 0
 
                     first_col = data.row_values(i)[0]
-                    second_col = data.row_values(i)[1]
-                    third_col = data.row_values(i)[2]
-                    fourth_col = data.row_values(i)[3]
-                    fifth_col = data.row_values(i)[4]
+                    second_col = data.row_values(i)[1] # subject title
+                    third_col = data.row_values(i)[2]  # group title
+                    fourth_col = data.row_values(i)[3] # teacher name
+                    fifth_col = data.row_values(i)[4]  # cabinet number
+
+                    if "8" in third_col or "9" in third_col or "10" in third_col or "11" in third_col:
+                        temp_group = third_col.split('-')[1]
 
                     if counter == 0:
                         if __day : 
@@ -108,7 +112,6 @@ class StudentShedule:
                     checker = False
                     for i in range(len(day.shedule) - 1, 0, -1):
                         lesson = day.shedule[i]
-                        lesson.bell = '12:12'
 
                         if (len(lesson.title) == 0 and not checker):
                             day.shedule.remove(lesson)
@@ -119,6 +122,13 @@ class StudentShedule:
                         if (len(lesson.title) > 0):
                             checker = True
 
+                    for i in range(len(day.shedule)):
+                        if temp_group == '9' or temp_group == '8':
+                            day.shedule[i].bell = bells_8_9[i]
+
+                        if temp_group == '10' or temp_group == '11':
+                            day.shedule[i].bell = bells_10_11[i]
+                            
                 self.shedule = __week.shedule
 
                 break      

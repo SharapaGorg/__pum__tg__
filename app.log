@@ -891,3 +891,17 @@ aiogram.utils.exceptions.BadRequest: Unsupported parse_mode
 [09/15/2021 09:14:40 PM] [data.LogPython 4116 ] [INFO   ] // Егор Душин // called shedule [Борисов]
 [09/15/2021 09:14:47 PM] [data.LogPython 9996 ] [INFO   ] Success connected
 [09/15/2021 09:14:49 PM] [data.LogPython 9996 ] [INFO   ] // Егор Душин // called shedule [Реутов]
+[09/21/2021 05:35:10 PM] [data.LogPython 11220] [INFO   ] Success connected
+[09/21/2021 05:35:14 PM] [data.LogPython 11220] [ERROR  ] Student not found
+[09/21/2021 05:35:14 PM] [data.LogPython 11220] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 55, in shedule
+    data = StudentShedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 131, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/21/2021 05:35:22 PM] [data.LogPython 11220] [INFO   ] // Егор Душин // called shedule [Слетков]
+[09/21/2021 05:37:48 PM] [data.LogPython 6796 ] [INFO   ] Success connected
+[09/21/2021 05:37:55 PM] [data.LogPython 6796 ] [INFO   ] // Егор Душин // called shedule [Слетков]
+[09/21/2021 05:39:06 PM] [data.LogPython 768  ] [INFO   ] Success connected
+[09/21/2021 05:39:12 PM] [data.LogPython 768  ] [INFO   ] // Егор Душин // called shedule [Слетков]
