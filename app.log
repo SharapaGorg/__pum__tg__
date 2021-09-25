@@ -905,3 +905,47 @@ Exception: Student not found
 [09/21/2021 05:37:55 PM] [data.LogPython 6796 ] [INFO   ] // Егор Душин // called shedule [Слетков]
 [09/21/2021 05:39:06 PM] [data.LogPython 768  ] [INFO   ] Success connected
 [09/21/2021 05:39:12 PM] [data.LogPython 768  ] [INFO   ] // Егор Душин // called shedule [Слетков]
+[09/24/2021 09:26:17 PM] [data.LogPython 1780 ] [INFO   ] Success connected
+[09/24/2021 09:26:35 PM] [data.LogPython 1780 ] [INFO   ] // Егор Душин // called schedule [Быков]
+[09/24/2021 11:44:42 PM] [LogPython 14768] [INFO   ] 
+[09/24/2021 11:44:57 PM] [LogPython 18828] [INFO   ] 
+[09/24/2021 11:46:27 PM] [LogPython 16352] [INFO   ] 
+[09/25/2021 02:12:43 PM] [data.LogPython 948  ] [INFO   ] Success connected
+[09/25/2021 02:13:41 PM] [data.LogPython 1800 ] [INFO   ] Success connected
+[09/25/2021 02:14:57 PM] [data.LogPython 12824] [INFO   ] Success connected
+[09/25/2021 02:16:41 PM] [data.LogPython 8504 ] [INFO   ] Success connected
+[09/25/2021 02:18:28 PM] [data.LogPython 12584] [INFO   ] Success connected
+[09/25/2021 02:18:46 PM] [data.LogPython 2716 ] [INFO   ] Success connected
+[09/25/2021 02:20:04 PM] [data.LogPython 1496 ] [INFO   ] Success connected
+[09/25/2021 02:20:17 PM] [data.LogPython 1460 ] [INFO   ] Success connected
+[09/25/2021 02:20:24 PM] [data.LogPython 1460 ] [ERROR  ] Student not found
+[09/25/2021 02:20:24 PM] [data.LogPython 1460 ] [ERROR  ] Traceback (most recent call last):
+  File "D:\Dev\Ideas\new__pum_tg__\main.py", line 86, in schedule
+    data = StudentSchedule(r)
+  File "D:\Dev\Ideas\new__pum_tg__\data\utils.py", line 148, in __init__
+    raise Exception('Student not found')
+Exception: Student not found
+
+[09/25/2021 02:21:37 PM] [data.LogPython 2004 ] [INFO   ] Success connected
+[09/25/2021 02:24:04 PM] [data.LogPython 12960] [INFO   ] Success connected
+[09/25/2021 02:25:17 PM] [data.LogPython 5116 ] [INFO   ] Success connected
+[09/25/2021 02:25:55 PM] [data.LogPython 2748 ] [INFO   ] Success connected
+[09/25/2021 02:26:29 PM] [data.LogPython 4660 ] [INFO   ] Success connected
+[09/25/2021 02:29:58 PM] [data.LogPython 13276] [INFO   ] Success connected
+[09/25/2021 02:31:28 PM] [data.LogPython 1348 ] [INFO   ] Success connected
+[09/25/2021 02:32:03 PM] [data.LogPython 12304] [INFO   ] Success connected
+[09/25/2021 02:32:38 PM] [data.LogPython 2872 ] [INFO   ] Success connected
+[09/25/2021 02:33:21 PM] [data.LogPython 2872 ] [INFO   ] // Егор Душин // called schedule [Слетков]
+[09/25/2021 02:35:37 PM] [data.LogPython 8504 ] [INFO   ] Success connected
+[09/25/2021 02:41:32 PM] [data.LogPython 5620 ] [INFO   ] Success connected
+[09/25/2021 02:51:30 PM] [data.LogPython 11648] [INFO   ] Success connected
+[09/25/2021 02:52:13 PM] [data.LogPython 12316] [INFO   ] Success connected
+[09/25/2021 02:55:43 PM] [data.LogPython 2296 ] [INFO   ] Success connected
+[09/25/2021 02:56:30 PM] [data.LogPython 12012] [INFO   ] Success connected
+[09/25/2021 02:59:08 PM] [data.LogPython 11472] [INFO   ] Success connected
+[09/25/2021 03:01:00 PM] [data.LogPython 9576 ] [INFO   ] Success connected
+[09/25/2021 03:01:49 PM] [data.LogPython 2752 ] [INFO   ] Success connected
+[09/25/2021 03:02:49 PM] [data.LogPython 7152 ] [INFO   ] Success connected
+[09/25/2021 03:09:37 PM] [data.LogPython 11580] [INFO   ] Success connected
+[09/25/2021 03:10:14 PM] [data.LogPython 11944] [INFO   ] Success connected
+[09/25/2021 03:10:35 PM] [data.LogPython 11468] [INFO   ] Success connected
