@@ -25,6 +25,8 @@ except:
 bot = Bot(token=settings['TOKEN'])
 dp = Dispatcher(bot, storage=MemoryStorage())
 
+# schedule - Присылает расписание ученика по его имени
+# teacher_schedule - Присылает расписание учителя по его фамилии (долго)
 
 class ScheduleDataInput(StatesGroup):
     r = State()
@@ -51,7 +53,7 @@ async def proccess_schedule_command(msg: types.Message):
 
 @dp.message_handler(commands=['teacher_schedule'])
 async def proccess_teacher_schedule_command(msg: types.Message):
-    await bot.send_message(msg.chat.id, 'Напишите фамилию преподавателя')
+    await bot.send_message(msg.chat.id, 'Напишите фамилию преподавателя [может работать долго]')
     await TeacherScheduleDataInput.r.set()
 
 
@@ -65,35 +67,39 @@ async def proccess_find_victim_command(msg: types.Message):
 async def teacher_schedule(msg: types.Message, state: FSMContext):
     r = msg.text
 
-    groups = set()
-    teacher = Teacher(r)
+    try:
+        groups = set()
+        teacher = Teacher(r)
 
-    message = teacher.name + '\n\nДень недели:\nВремя начала - кабинет Название Группа\n'
+        message = teacher.name + '\n\nДень недели:\nВремя начала - кабинет Название Группа\n'
 
-    for day_title in teacher.schedule:
-        day = teacher.schedule[day_title]
-        message += '\n' + day_title + ':\n'
+        for day_title in teacher.schedule:
+            day = teacher.schedule[day_title]
+            message += '\n' + day_title + ':\n'
 
-        for lesson in day.schedule:
-            spacer, temp_cab = 0, ''
+            for lesson in day.schedule:
+                spacer, temp_cab = 0, ''
 
-            if len(lesson.cab) < 3:
-                temp_cab = "000"
-            elif len(lesson.cab) > 3:
-                spacer = 4
+                if len(lesson.cab) < 3:
+                    temp_cab = "000"
+                elif len(lesson.cab) > 3:
+                    spacer = 4
 
-            try:
-                message += lesson.bell + " - " + temp_cab + lesson.cab + ' ' * \
-                    (16 - len(lesson.cab) - len(temp_cab) - spacer) + \
-                    str(lesson) + ' ' + lesson.group + '\n'
-            except:
-                pass
+                try:
+                    message += lesson.bell + " - " + temp_cab + lesson.cab + ' ' * \
+                        (16 - len(lesson.cab) - len(temp_cab) - spacer) + \
+                        str(lesson) + ' ' + lesson.group + '\n'
+                except:
+                    pass
 
-            groups.add(lesson.group)
+                groups.add(lesson.group)
+                
+        await bot.send_message(msg.from_user.id, message)
+                
+    except Exception as e:
+        await bot.send_message(msg.from_user.id, f'`{e}`', parse_mode='markdown')
 
-    await bot.send_message(msg.from_user.id, message)
     await state.finish()
-
 
 @dp.message_handler(state=ScheduleDataInput.r)
 async def schedule(msg: types.Message, state: FSMContext):

@@ -231,6 +231,9 @@ class Teacher:
         self.name
         will_delete = list()
 
+        if self._schedule is None:
+            raise KeyError(f'Teacher {self._name} is not defined')
+
         for day_title in self._schedule:
             day = self._schedule[day_title]
 
